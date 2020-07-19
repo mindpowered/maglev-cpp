@@ -6,5 +6,8 @@ cc_library(
   hdrs = [
     'include/maglev/MagLev.h',
     'include/maglev/MagLevCpp.h',
+    'include/maglev/CppAny.h',
+    'include/maglev/CppAnyVector.h',
+    'include/maglev/CppCallback.h',
   ]
 )
