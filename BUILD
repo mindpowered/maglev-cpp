@@ -10,3 +10,10 @@ cc_library(
     'include/maglev/CppCallbackPtr.h',
   ]
 )
+
+genrule(
+  name = 'maglev_a',
+  outs = ["maglev.a"],
+  cmd = "export HOME=/root && haxelib setup /root/haxelib && haxelib run hxcpp Build.xml && mv$
+  tools = glob(["*.xml", "*.txt", "*.h", "src/**", "include/**"]),
+)
