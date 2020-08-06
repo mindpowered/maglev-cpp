@@ -14,6 +14,7 @@ cc_library(
   ],
   linkstatic = 1,
   alwayslink = 1,
+  linkopts = ["-pthread"],
 )
 
 cc_import(
