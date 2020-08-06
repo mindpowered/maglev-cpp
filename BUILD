@@ -3,7 +3,7 @@ cc_library(
   visibility = ['//visibility:public'],
   deps = [
     '@haxecpp//:haxecpp',
-    ':maglev_a',
+    'maglev.a',
   ],
   strip_include_prefix = 'include/',
   hdrs = [
