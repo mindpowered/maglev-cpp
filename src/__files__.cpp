@@ -7,6 +7,8 @@ const char *__hxcpp_all_files[] = {
 "/opt/haxe/std/EnumValue.hx",
 "/opt/haxe/std/IntIterator.hx",
 "/opt/haxe/std/StringTools.hx",
+"/opt/haxe/std/UInt.hx",
+"/opt/haxe/std/cpp/Finalizable.hx",
 "/opt/haxe/std/cpp/_std/Date.hx",
 "/opt/haxe/std/cpp/_std/EReg.hx",
 "/opt/haxe/std/cpp/_std/Reflect.hx",
@@ -39,7 +41,10 @@ const char *__hxcpp_all_files[] = {
 "/opt/haxe/std/haxe/iterators/StringIterator.hx",
 "/opt/haxe/std/haxe/iterators/StringIteratorUnicode.hx",
 "/opt/haxe/std/haxe/iterators/StringKeyValueIterator.hx",
+"maglev/CppAny.hx",
+"maglev/CppCallback.hx",
 "maglev/MagLev.hx",
+"maglev/MagLevCpp.hx",
 #endif
  0 };
 
@@ -48,6 +53,8 @@ const char *__hxcpp_all_files_fullpath[] = {
 "/opt/haxe/std/EnumValue.hx",
 "/opt/haxe/std/IntIterator.hx",
 "/opt/haxe/std/StringTools.hx",
+"/opt/haxe/std/UInt.hx",
+"/opt/haxe/std/cpp/Finalizable.hx",
 "/opt/haxe/std/cpp/_std/Date.hx",
 "/opt/haxe/std/cpp/_std/EReg.hx",
 "/opt/haxe/std/cpp/_std/Reflect.hx",
@@ -80,7 +87,10 @@ const char *__hxcpp_all_files_fullpath[] = {
 "/opt/haxe/std/haxe/iterators/StringIterator.hx",
 "/opt/haxe/std/haxe/iterators/StringIteratorUnicode.hx",
 "/opt/haxe/std/haxe/iterators/StringKeyValueIterator.hx",
+"/my-component/src/maglev/CppAny.hx",
+"/my-component/src/maglev/CppCallback.hx",
 "/my-component/src/maglev/MagLev.hx",
+"/my-component/src/maglev/MagLevCpp.hx",
 #endif
  0 };
 
@@ -96,6 +106,8 @@ const char *__hxcpp_all_classes[] = {
 "haxe.SysTools",
 "StringTools",
 "Type",
+"_UInt.UInt_Impl_",
+"cpp.Finalizable",
 "haxe._CallStack.CallStack_Impl_",
 "haxe.Exception",
 "haxe.Json",
@@ -123,7 +135,10 @@ const char *__hxcpp_all_classes[] = {
 "haxe.iterators.StringIterator",
 "haxe.iterators.StringIteratorUnicode",
 "haxe.iterators.StringKeyValueIterator",
+"maglev.CppAny",
+"maglev.CppCallbackPtr",
 "maglev.MagLev",
+"maglev.MagLevCpp",
 #endif
  0 };
 } // namespace hx

@@ -2,11 +2,29 @@
 <set name="HXCPP_API_LEVEL" value="400" />
 <files id="haxe">
 <compilerflag value="-Iinclude"/>
+  <file name="src/maglev/MagLevCpp.cpp" >
+   <depend name="include/maglev/CppAny.h"/>
+   <depend name="include/maglev/MagLev.h"/>
+   <depend name="include/maglev/MagLevCpp.h"/>
+  </file>
   <file name="src/maglev/MagLev.cpp" >
    <depend name="include/haxe/Exception.h"/>
    <depend name="include/haxe/IMap.h"/>
    <depend name="include/haxe/ds/StringMap.h"/>
    <depend name="include/maglev/MagLev.h"/>
+  </file>
+  <file name="src/maglev/CppCallbackPtr.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/cpp/Finalizable.h"/>
+   <depend name="include/maglev/CppAny.h"/>
+   <depend name="include/maglev/CppCallbackPtr.h"/>
+  </file>
+  <file name="src/maglev/CppAny.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/haxe/Exception.h"/>
+   <depend name="include/haxe/IMap.h"/>
+   <depend name="include/haxe/ds/StringMap.h"/>
+   <depend name="include/maglev/CppAny.h"/>
   </file>
   <file name="src/haxe/iterators/StringKeyValueIterator.cpp" >
    <depend name="include/haxe/iterators/StringKeyValueIterator.h"/>
@@ -166,6 +184,13 @@
   </file>
   <file name="src/haxe/StackItem.cpp" >
    <depend name="include/haxe/StackItem.h"/>
+  </file>
+  <file name="src/cpp/Finalizable.cpp" >
+   <depend name="include/cpp/Finalizable.h"/>
+  </file>
+  <file name="src/_UInt/UInt_Impl_.cpp" >
+   <depend name="include/Std.h"/>
+   <depend name="include/_UInt/UInt_Impl_.h"/>
   </file>
   <file name="src/Type.cpp" >
    <depend name="include/Reflect.h"/>

@@ -22,6 +22,15 @@
 #ifndef INCLUDED_EReg
 #include <EReg.h>
 #endif
+#ifndef INCLUDED_maglev_MagLevCpp
+#include <maglev/MagLevCpp.h>
+#endif
+#ifndef INCLUDED_maglev_CppCallbackPtr
+#include <maglev/CppCallbackPtr.h>
+#endif
+#ifndef INCLUDED_maglev_CppAny
+#include <maglev/CppAny.h>
+#endif
 #ifndef INCLUDED_haxe_iterators_StringKeyValueIterator
 #include <haxe/iterators/StringKeyValueIterator.h>
 #endif
@@ -103,6 +112,12 @@
 #ifndef INCLUDED_haxe__CallStack_CallStack_Impl_
 #include <haxe/_CallStack/CallStack_Impl_.h>
 #endif
+#ifndef INCLUDED_cpp_Finalizable
+#include <cpp/Finalizable.h>
+#endif
+#ifndef INCLUDED__UInt_UInt_Impl_
+#include <_UInt/UInt_Impl_.h>
+#endif
 #ifndef INCLUDED_Type
 #include <Type.h>
 #endif
@@ -138,6 +153,9 @@ __files__boot();
 ::StringTools_obj::__register();
 ::haxe::SysTools_obj::__register();
 ::EReg_obj::__register();
+::maglev::MagLevCpp_obj::__register();
+::maglev::CppCallbackPtr_obj::__register();
+::maglev::CppAny_obj::__register();
 ::haxe::iterators::StringKeyValueIterator_obj::__register();
 ::haxe::iterators::StringIteratorUnicode_obj::__register();
 ::haxe::iterators::StringIterator_obj::__register();
@@ -165,6 +183,8 @@ __files__boot();
 ::haxe::Exception_obj::__register();
 ::haxe::IMap_obj::__register();
 ::haxe::_CallStack::CallStack_Impl__obj::__register();
+::cpp::Finalizable_obj::__register();
+::_UInt::UInt_Impl__obj::__register();
 ::Type_obj::__register();
 ::StringBuf_obj::__register();
 ::Std_obj::__register();
