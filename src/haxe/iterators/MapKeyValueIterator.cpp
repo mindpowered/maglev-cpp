@@ -2,10 +2,10 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_IMap
-#include <haxe/IMap.h>
+#include <maglev/haxe/IMap.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_MapKeyValueIterator
-#include <haxe/iterators/MapKeyValueIterator.h>
+#include <maglev/haxe/iterators/MapKeyValueIterator.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_43dea4fba9405cd8_35_new,"haxe.iterators.MapKeyValueIterator","new",0x902a97fd,"haxe.iterators.MapKeyValueIterator.new","/opt/haxe/std/haxe/iterators/MapKeyValueIterator.hx",35,0xdcdcb84b)

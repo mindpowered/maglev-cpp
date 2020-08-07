@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_IMap
-#include <haxe/IMap.h>
+#include <maglev/haxe/IMap.h>
 #endif
 
 namespace haxe{

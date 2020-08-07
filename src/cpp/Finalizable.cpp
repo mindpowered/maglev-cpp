@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_cpp_Finalizable
-#include <cpp/Finalizable.h>
+#include <maglev/cpp/Finalizable.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_08daad35fae38b7e_32_new,"cpp.Finalizable","new",0x5cbe4a08,"cpp.Finalizable.new","/opt/haxe/std/cpp/Finalizable.hx",32,0x580d3ef3)

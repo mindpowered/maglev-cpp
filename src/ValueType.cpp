@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_ValueType
-#include <ValueType.h>
+#include <maglev/ValueType.h>
 #endif
 
 ::ValueType ValueType_obj::TBool;

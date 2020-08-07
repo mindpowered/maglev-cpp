@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED__EnumValue_EnumValue_Impl_
-#include <_EnumValue/EnumValue_Impl_.h>
+#include <maglev/_EnumValue/EnumValue_Impl_.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_9457f255fbbefd9c_59_match,"_EnumValue.EnumValue_Impl_","match",0xd44b0daa,"_EnumValue.EnumValue_Impl_.match","/opt/haxe/std/EnumValue.hx",59,0x94dad978)

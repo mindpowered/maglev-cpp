@@ -2,25 +2,25 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_IMap
-#include <haxe/IMap.h>
+#include <maglev/haxe/IMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_BalancedTree
-#include <haxe/ds/BalancedTree.h>
+#include <maglev/haxe/ds/BalancedTree.h>
 #endif
 #ifndef INCLUDED_haxe_ds_EnumValueMap
-#include <haxe/ds/EnumValueMap.h>
+#include <maglev/haxe/ds/EnumValueMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_IntMap
-#include <haxe/ds/IntMap.h>
+#include <maglev/haxe/ds/IntMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_ObjectMap
-#include <haxe/ds/ObjectMap.h>
+#include <maglev/haxe/ds/ObjectMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_StringMap
-#include <haxe/ds/StringMap.h>
+#include <maglev/haxe/ds/StringMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds__Map_Map_Impl_
-#include <haxe/ds/_Map/Map_Impl_.h>
+#include <maglev/haxe/ds/_Map/Map_Impl_.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_c8f083689c43f3bd_75_set,"haxe.ds._Map.Map_Impl_","set",0x6544f0d6,"haxe.ds._Map.Map_Impl_.set","/opt/haxe/std/haxe/ds/Map.hx",75,0x9e8490e3)

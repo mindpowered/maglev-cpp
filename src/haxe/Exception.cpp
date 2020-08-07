@@ -2,22 +2,22 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Std
-#include <Std.h>
+#include <maglev/Std.h>
 #endif
 #ifndef INCLUDED_haxe_Exception
-#include <haxe/Exception.h>
+#include <maglev/haxe/Exception.h>
 #endif
 #ifndef INCLUDED_haxe_NativeStackTrace
-#include <haxe/NativeStackTrace.h>
+#include <maglev/haxe/NativeStackTrace.h>
 #endif
 #ifndef INCLUDED_haxe_StackItem
-#include <haxe/StackItem.h>
+#include <maglev/haxe/StackItem.h>
 #endif
 #ifndef INCLUDED_haxe_ValueException
-#include <haxe/ValueException.h>
+#include <maglev/haxe/ValueException.h>
 #endif
 #ifndef INCLUDED_haxe__CallStack_CallStack_Impl_
-#include <haxe/_CallStack/CallStack_Impl_.h>
+#include <maglev/haxe/_CallStack/CallStack_Impl_.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_26167a496050a8e9_5_new,"haxe.Exception","new",0xa32fba59,"haxe.Exception.new","/opt/haxe/std/cpp/_std/haxe/Exception.hx",5,0xcf5fdbc3)

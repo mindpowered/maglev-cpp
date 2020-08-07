@@ -14,13 +14,13 @@
 #include "hx/StdString.h"
 #endif
 #ifndef INCLUDED_maglev_CppAny
-#include <maglev/CppAny.h>
+#include <maglev/maglev/CppAny.h>
 #endif
 #ifndef INCLUDED_maglev_MagLev
-#include <maglev/MagLev.h>
+#include <maglev/maglev/MagLev.h>
 #endif
 #ifndef INCLUDED_maglev_MagLevCpp
-#include <maglev/MagLevCpp.h>
+#include <maglev/maglev/MagLevCpp.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_463dba869de52960_22_new,"maglev.MagLevCpp","new",0x153a7547,"maglev.MagLevCpp.new","maglev/MagLevCpp.hx",22,0x0d988d8a)

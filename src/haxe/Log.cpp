@@ -2,10 +2,10 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Std
-#include <Std.h>
+#include <maglev/Std.h>
 #endif
 #ifndef INCLUDED_haxe_Log
-#include <haxe/Log.h>
+#include <maglev/haxe/Log.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_4eaa2007a1569844_30___default_trace,"haxe.Log","__default_trace",0xe2f5e5d5,"haxe.Log.__default_trace","/opt/haxe/std/cpp/_std/haxe/Log.hx",30,0x3d12b7ae)

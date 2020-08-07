@@ -2,16 +2,16 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_Exception
-#include <haxe/Exception.h>
+#include <maglev/haxe/Exception.h>
 #endif
 #ifndef INCLUDED_haxe_IMap
-#include <haxe/IMap.h>
+#include <maglev/haxe/IMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_StringMap
-#include <haxe/ds/StringMap.h>
+#include <maglev/haxe/ds/StringMap.h>
 #endif
 #ifndef INCLUDED_maglev_MagLev
-#include <maglev/MagLev.h>
+#include <maglev/maglev/MagLev.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_74be3df12ab3af58_17_new,"maglev.MagLev","new",0xda2b4be0,"maglev.MagLev.new","maglev/MagLev.hx",17,0x5b19476f)

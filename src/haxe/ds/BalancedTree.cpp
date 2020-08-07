@@ -2,28 +2,28 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Reflect
-#include <Reflect.h>
+#include <maglev/Reflect.h>
 #endif
 #ifndef INCLUDED_Std
-#include <Std.h>
+#include <maglev/Std.h>
 #endif
 #ifndef INCLUDED_haxe_Exception
-#include <haxe/Exception.h>
+#include <maglev/haxe/Exception.h>
 #endif
 #ifndef INCLUDED_haxe_IMap
-#include <haxe/IMap.h>
+#include <maglev/haxe/IMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_BalancedTree
-#include <haxe/ds/BalancedTree.h>
+#include <maglev/haxe/ds/BalancedTree.h>
 #endif
 #ifndef INCLUDED_haxe_ds_TreeNode
-#include <haxe/ds/TreeNode.h>
+#include <maglev/haxe/ds/TreeNode.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_ArrayIterator
-#include <haxe/iterators/ArrayIterator.h>
+#include <maglev/haxe/iterators/ArrayIterator.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_MapKeyValueIterator
-#include <haxe/iterators/MapKeyValueIterator.h>
+#include <maglev/haxe/iterators/MapKeyValueIterator.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_09ef105d9bffd341_41_new,"haxe.ds.BalancedTree","new",0xfb50b0cf,"haxe.ds.BalancedTree.new","/opt/haxe/std/haxe/ds/BalancedTree.hx",41,0xe5e8edd7)

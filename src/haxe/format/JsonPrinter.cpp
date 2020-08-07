@@ -6,34 +6,34 @@
 #include "hxMath.h"
 #endif
 #ifndef INCLUDED_Date
-#include <Date.h>
+#include <maglev/Date.h>
 #endif
 #ifndef INCLUDED_Reflect
-#include <Reflect.h>
+#include <maglev/Reflect.h>
 #endif
 #ifndef INCLUDED_Std
-#include <Std.h>
+#include <maglev/Std.h>
 #endif
 #ifndef INCLUDED_StringBuf
-#include <StringBuf.h>
+#include <maglev/StringBuf.h>
 #endif
 #ifndef INCLUDED_StringTools
-#include <StringTools.h>
+#include <maglev/StringTools.h>
 #endif
 #ifndef INCLUDED_Type
-#include <Type.h>
+#include <maglev/Type.h>
 #endif
 #ifndef INCLUDED_ValueType
-#include <ValueType.h>
+#include <maglev/ValueType.h>
 #endif
 #ifndef INCLUDED_haxe_IMap
-#include <haxe/IMap.h>
+#include <maglev/haxe/IMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_StringMap
-#include <haxe/ds/StringMap.h>
+#include <maglev/haxe/ds/StringMap.h>
 #endif
 #ifndef INCLUDED_haxe_format_JsonPrinter
-#include <haxe/format/JsonPrinter.h>
+#include <maglev/haxe/format/JsonPrinter.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_398d021480996d3e_56_new,"haxe.format.JsonPrinter","new",0xeb68de75,"haxe.format.JsonPrinter.new","/opt/haxe/std/haxe/format/JsonPrinter.hx",56,0x72c2fb85)

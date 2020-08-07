@@ -2,142 +2,142 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_StackItem
-#include <haxe/StackItem.h>
+#include <maglev/haxe/StackItem.h>
 #endif
 #ifndef INCLUDED_ValueType
-#include <ValueType.h>
+#include <maglev/ValueType.h>
 #endif
 #ifndef INCLUDED_maglev_MagLev
-#include <maglev/MagLev.h>
+#include <maglev/maglev/MagLev.h>
 #endif
 #ifndef INCLUDED_haxe_Log
-#include <haxe/Log.h>
+#include <maglev/haxe/Log.h>
 #endif
 #ifndef INCLUDED_StringTools
-#include <StringTools.h>
+#include <maglev/StringTools.h>
 #endif
 #ifndef INCLUDED_haxe_SysTools
-#include <haxe/SysTools.h>
+#include <maglev/haxe/SysTools.h>
 #endif
 #ifndef INCLUDED_EReg
-#include <EReg.h>
+#include <maglev/EReg.h>
 #endif
 #ifndef INCLUDED_maglev_MagLevCpp
-#include <maglev/MagLevCpp.h>
+#include <maglev/maglev/MagLevCpp.h>
 #endif
 #ifndef INCLUDED_maglev_CppCallbackPtr
-#include <maglev/CppCallbackPtr.h>
+#include <maglev/maglev/CppCallbackPtr.h>
 #endif
 #ifndef INCLUDED_maglev_CppAny
-#include <maglev/CppAny.h>
+#include <maglev/maglev/CppAny.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_StringKeyValueIterator
-#include <haxe/iterators/StringKeyValueIterator.h>
+#include <maglev/haxe/iterators/StringKeyValueIterator.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_StringIteratorUnicode
-#include <haxe/iterators/StringIteratorUnicode.h>
+#include <maglev/haxe/iterators/StringIteratorUnicode.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_StringIterator
-#include <haxe/iterators/StringIterator.h>
+#include <maglev/haxe/iterators/StringIterator.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_MapKeyValueIterator
-#include <haxe/iterators/MapKeyValueIterator.h>
+#include <maglev/haxe/iterators/MapKeyValueIterator.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_HashMapKeyValueIterator
-#include <haxe/iterators/HashMapKeyValueIterator.h>
+#include <maglev/haxe/iterators/HashMapKeyValueIterator.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_ArrayKeyValueIterator
-#include <haxe/iterators/ArrayKeyValueIterator.h>
+#include <maglev/haxe/iterators/ArrayKeyValueIterator.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_ArrayIterator
-#include <haxe/iterators/ArrayIterator.h>
+#include <maglev/haxe/iterators/ArrayIterator.h>
 #endif
 #ifndef INCLUDED_haxe_format_JsonPrinter
-#include <haxe/format/JsonPrinter.h>
+#include <maglev/haxe/format/JsonPrinter.h>
 #endif
 #ifndef INCLUDED_haxe_format_JsonParser
-#include <haxe/format/JsonParser.h>
+#include <maglev/haxe/format/JsonParser.h>
 #endif
 #ifndef INCLUDED_haxe_ds_WeakMap
-#include <haxe/ds/WeakMap.h>
+#include <maglev/haxe/ds/WeakMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds__Vector_Vector_Impl_
-#include <haxe/ds/_Vector/Vector_Impl_.h>
+#include <maglev/haxe/ds/_Vector/Vector_Impl_.h>
 #endif
 #ifndef INCLUDED_haxe_ds_StringMap
-#include <haxe/ds/StringMap.h>
+#include <maglev/haxe/ds/StringMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds__ReadOnlyArray_ReadOnlyArray_Impl_
-#include <haxe/ds/_ReadOnlyArray/ReadOnlyArray_Impl_.h>
+#include <maglev/haxe/ds/_ReadOnlyArray/ReadOnlyArray_Impl_.h>
 #endif
 #ifndef INCLUDED_haxe_ds_ObjectMap
-#include <haxe/ds/ObjectMap.h>
+#include <maglev/haxe/ds/ObjectMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds__Map_Map_Impl_
-#include <haxe/ds/_Map/Map_Impl_.h>
+#include <maglev/haxe/ds/_Map/Map_Impl_.h>
 #endif
 #ifndef INCLUDED_haxe_ds_IntMap
-#include <haxe/ds/IntMap.h>
+#include <maglev/haxe/ds/IntMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds__HashMap_HashMapData
-#include <haxe/ds/_HashMap/HashMapData.h>
+#include <maglev/haxe/ds/_HashMap/HashMapData.h>
 #endif
 #ifndef INCLUDED_haxe_ds__HashMap_HashMap_Impl_
-#include <haxe/ds/_HashMap/HashMap_Impl_.h>
+#include <maglev/haxe/ds/_HashMap/HashMap_Impl_.h>
 #endif
 #ifndef INCLUDED_haxe_ds_EnumValueMap
-#include <haxe/ds/EnumValueMap.h>
+#include <maglev/haxe/ds/EnumValueMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_TreeNode
-#include <haxe/ds/TreeNode.h>
+#include <maglev/haxe/ds/TreeNode.h>
 #endif
 #ifndef INCLUDED_haxe_ds_BalancedTree
-#include <haxe/ds/BalancedTree.h>
+#include <maglev/haxe/ds/BalancedTree.h>
 #endif
 #ifndef INCLUDED_haxe_ValueException
-#include <haxe/ValueException.h>
+#include <maglev/haxe/ValueException.h>
 #endif
 #ifndef INCLUDED_haxe_NativeStackTrace
-#include <haxe/NativeStackTrace.h>
+#include <maglev/haxe/NativeStackTrace.h>
 #endif
 #ifndef INCLUDED_haxe_Json
-#include <haxe/Json.h>
+#include <maglev/haxe/Json.h>
 #endif
 #ifndef INCLUDED_haxe_Exception
-#include <haxe/Exception.h>
+#include <maglev/haxe/Exception.h>
 #endif
 #ifndef INCLUDED_haxe_IMap
-#include <haxe/IMap.h>
+#include <maglev/haxe/IMap.h>
 #endif
 #ifndef INCLUDED_haxe__CallStack_CallStack_Impl_
-#include <haxe/_CallStack/CallStack_Impl_.h>
+#include <maglev/haxe/_CallStack/CallStack_Impl_.h>
 #endif
 #ifndef INCLUDED_cpp_Finalizable
-#include <cpp/Finalizable.h>
+#include <maglev/cpp/Finalizable.h>
 #endif
 #ifndef INCLUDED__UInt_UInt_Impl_
-#include <_UInt/UInt_Impl_.h>
+#include <maglev/_UInt/UInt_Impl_.h>
 #endif
 #ifndef INCLUDED_Type
-#include <Type.h>
+#include <maglev/Type.h>
 #endif
 #ifndef INCLUDED_StringBuf
-#include <StringBuf.h>
+#include <maglev/StringBuf.h>
 #endif
 #ifndef INCLUDED_Std
-#include <Std.h>
+#include <maglev/Std.h>
 #endif
 #ifndef INCLUDED_Reflect
-#include <Reflect.h>
+#include <maglev/Reflect.h>
 #endif
 #ifndef INCLUDED_IntIterator
-#include <IntIterator.h>
+#include <maglev/IntIterator.h>
 #endif
 #ifndef INCLUDED__EnumValue_EnumValue_Impl_
-#include <_EnumValue/EnumValue_Impl_.h>
+#include <maglev/_EnumValue/EnumValue_Impl_.h>
 #endif
 #ifndef INCLUDED_Date
-#include <Date.h>
+#include <maglev/Date.h>
 #endif
 
 void __files__boot();

@@ -7,10 +7,10 @@
 #endif
 
 #ifndef INCLUDED_haxe_ds_BalancedTree
-#include <haxe/ds/BalancedTree.h>
+#include <maglev/haxe/ds/BalancedTree.h>
 #endif
 #ifndef INCLUDED_haxe_IMap
-#include <haxe/IMap.h>
+#include <maglev/haxe/IMap.h>
 #endif
 HX_DECLARE_CLASS1(haxe,IMap)
 HX_DECLARE_CLASS2(haxe,ds,BalancedTree)

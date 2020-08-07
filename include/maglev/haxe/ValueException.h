@@ -7,7 +7,7 @@
 #endif
 
 #ifndef INCLUDED_haxe_Exception
-#include <haxe/Exception.h>
+#include <maglev/haxe/Exception.h>
 #endif
 HX_DECLARE_CLASS1(haxe,Exception)
 HX_DECLARE_CLASS1(haxe,ValueException)

@@ -2,13 +2,13 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Std
-#include <Std.h>
+#include <maglev/Std.h>
 #endif
 #ifndef INCLUDED_haxe_NativeStackTrace
-#include <haxe/NativeStackTrace.h>
+#include <maglev/haxe/NativeStackTrace.h>
 #endif
 #ifndef INCLUDED_haxe_StackItem
-#include <haxe/StackItem.h>
+#include <maglev/haxe/StackItem.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_664a6908464a7208_12_saveStack,"haxe.NativeStackTrace","saveStack",0x471b27d9,"haxe.NativeStackTrace.saveStack","/opt/haxe/std/cpp/_std/haxe/NativeStackTrace.hx",12,0x1b852d36)

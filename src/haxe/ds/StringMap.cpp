@@ -2,16 +2,16 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_IMap
-#include <haxe/IMap.h>
+#include <maglev/haxe/IMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_StringMap
-#include <haxe/ds/StringMap.h>
+#include <maglev/haxe/ds/StringMap.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_ArrayIterator
-#include <haxe/iterators/ArrayIterator.h>
+#include <maglev/haxe/iterators/ArrayIterator.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_MapKeyValueIterator
-#include <haxe/iterators/MapKeyValueIterator.h>
+#include <maglev/haxe/iterators/MapKeyValueIterator.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_d43faa3203045b6e_58_new,"haxe.ds.StringMap","new",0x0f13f0c6,"haxe.ds.StringMap.new","/opt/haxe/std/cpp/_std/haxe/ds/StringMap.hx",58,0x09dddddf)

@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_ds__ReadOnlyArray_ReadOnlyArray_Impl_
-#include <haxe/ds/_ReadOnlyArray/ReadOnlyArray_Impl_.h>
+#include <maglev/haxe/ds/_ReadOnlyArray/ReadOnlyArray_Impl_.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_3b5d80fbcc9870af_41_get_length,"haxe.ds._ReadOnlyArray.ReadOnlyArray_Impl_","get_length",0xa04b5705,"haxe.ds._ReadOnlyArray.ReadOnlyArray_Impl_.get_length","/opt/haxe/std/haxe/ds/ReadOnlyArray.hx",41,0x7b903348)

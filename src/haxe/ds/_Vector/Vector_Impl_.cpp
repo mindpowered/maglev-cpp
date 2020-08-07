@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_ds__Vector_Vector_Impl_
-#include <haxe/ds/_Vector/Vector_Impl_.h>
+#include <maglev/haxe/ds/_Vector/Vector_Impl_.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_bb41de64726089da_64__new,"haxe.ds._Vector.Vector_Impl_","_new",0x3159a4a9,"haxe.ds._Vector.Vector_Impl_._new","/opt/haxe/std/haxe/ds/Vector.hx",64,0x44659d3a)

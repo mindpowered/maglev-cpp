@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_IntIterator
-#include <IntIterator.h>
+#include <maglev/IntIterator.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_82079e8cd5980096_45_new,"IntIterator","new",0x5692054f,"IntIterator.new","/opt/haxe/std/IntIterator.hx",45,0xacd87ccb)
