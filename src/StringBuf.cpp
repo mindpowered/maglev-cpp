@@ -2,10 +2,10 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_StringBuf
-#include <maglev/StringBuf.h>
+#include <StringBuf.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_a06fb0f8fa8d00d6_35_new,"StringBuf","new",0xaaa8f4b4,"StringBuf.new","/opt/haxe/std/cpp/_std/StringBuf.hx",35,0xd5b52e11)

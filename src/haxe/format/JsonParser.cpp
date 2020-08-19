@@ -2,19 +2,19 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Reflect
-#include <maglev/Reflect.h>
+#include <Reflect.h>
 #endif
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_StringBuf
-#include <maglev/StringBuf.h>
+#include <StringBuf.h>
 #endif
 #ifndef INCLUDED_haxe_Exception
-#include <maglev/haxe/Exception.h>
+#include <haxe/Exception.h>
 #endif
 #ifndef INCLUDED_haxe_format_JsonParser
-#include <maglev/haxe/format/JsonParser.h>
+#include <haxe/format/JsonParser.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_afeb56f93b8e0a94_51_new,"haxe.format.JsonParser","new",0xa017eec8,"haxe.format.JsonParser.new","/opt/haxe/std/haxe/format/JsonParser.hx",51,0x3577f7fe)

@@ -6,25 +6,25 @@
 #include "cpp/Pointer.h"
 #endif
 #ifndef INCLUDED_EReg
-#include <maglev/EReg.h>
+#include <EReg.h>
 #endif
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_StringBuf
-#include <maglev/StringBuf.h>
+#include <StringBuf.h>
 #endif
 #ifndef INCLUDED_StringTools
-#include <maglev/StringTools.h>
+#include <StringTools.h>
 #endif
 #ifndef INCLUDED_haxe_SysTools
-#include <maglev/haxe/SysTools.h>
+#include <haxe/SysTools.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_StringIterator
-#include <maglev/haxe/iterators/StringIterator.h>
+#include <haxe/iterators/StringIterator.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_StringKeyValueIterator
-#include <maglev/haxe/iterators/StringKeyValueIterator.h>
+#include <haxe/iterators/StringKeyValueIterator.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_13872a0344302f80_50_urlEncode,"StringTools","urlEncode",0x06afdce1,"StringTools.urlEncode","/opt/haxe/std/StringTools.hx",50,0x7f83095e)

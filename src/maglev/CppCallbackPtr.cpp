@@ -10,16 +10,16 @@
 #include "functional"
 #endif
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_cpp_Finalizable
-#include <maglev/cpp/Finalizable.h>
+#include <cpp/Finalizable.h>
 #endif
 #ifndef INCLUDED_maglev_CppAny
-#include <maglev/maglev/CppAny.h>
+#include <maglev/CppAny.h>
 #endif
 #ifndef INCLUDED_maglev_CppCallbackPtr
-#include <maglev/maglev/CppCallbackPtr.h>
+#include <maglev/CppCallbackPtr.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_13da0074370950dc_49_new,"maglev.CppCallbackPtr","new",0x2eaea39c,"maglev.CppCallbackPtr.new","maglev/CppCallback.hx",49,0x7d5fae5b)

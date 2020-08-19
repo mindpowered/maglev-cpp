@@ -2,19 +2,19 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_EReg
-#include <maglev/EReg.h>
+#include <EReg.h>
 #endif
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_StringBuf
-#include <maglev/StringBuf.h>
+#include <StringBuf.h>
 #endif
 #ifndef INCLUDED_StringTools
-#include <maglev/StringTools.h>
+#include <StringTools.h>
 #endif
 #ifndef INCLUDED_haxe_SysTools
-#include <maglev/haxe/SysTools.h>
+#include <haxe/SysTools.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_6f4798a462d17dba_18_quoteUnixArg,"haxe.SysTools","quoteUnixArg",0xb3a0810a,"haxe.SysTools.quoteUnixArg","/opt/haxe/std/haxe/SysTools.hx",18,0xdaa62931)

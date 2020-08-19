@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_iterators_ArrayKeyValueIterator
-#include <maglev/haxe/iterators/ArrayKeyValueIterator.h>
+#include <haxe/iterators/ArrayKeyValueIterator.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_eefbb444540c7293_26_new,"haxe.iterators.ArrayKeyValueIterator","new",0x6bd8a13a,"haxe.iterators.ArrayKeyValueIterator.new","/opt/haxe/std/haxe/iterators/ArrayKeyValueIterator.hx",26,0xf73563ae)

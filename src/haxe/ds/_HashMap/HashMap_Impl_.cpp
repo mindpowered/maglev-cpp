@@ -2,19 +2,19 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_IMap
-#include <maglev/haxe/IMap.h>
+#include <haxe/IMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_IntMap
-#include <maglev/haxe/ds/IntMap.h>
+#include <haxe/ds/IntMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds__HashMap_HashMapData
-#include <maglev/haxe/ds/_HashMap/HashMapData.h>
+#include <haxe/ds/_HashMap/HashMapData.h>
 #endif
 #ifndef INCLUDED_haxe_ds__HashMap_HashMap_Impl_
-#include <maglev/haxe/ds/_HashMap/HashMap_Impl_.h>
+#include <haxe/ds/_HashMap/HashMap_Impl_.h>
 #endif
 #ifndef INCLUDED_haxe_iterators_HashMapKeyValueIterator
-#include <maglev/haxe/iterators/HashMapKeyValueIterator.h>
+#include <haxe/iterators/HashMapKeyValueIterator.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_4d5d8a78b2f206e9_38__new,"haxe.ds._HashMap.HashMap_Impl_","_new",0x2a77b589,"haxe.ds._HashMap.HashMap_Impl_._new","/opt/haxe/std/haxe/ds/HashMap.hx",38,0x2e5337d1)

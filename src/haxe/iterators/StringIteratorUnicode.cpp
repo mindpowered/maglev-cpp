@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_iterators_StringIteratorUnicode
-#include <maglev/haxe/iterators/StringIteratorUnicode.h>
+#include <haxe/iterators/StringIteratorUnicode.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_952cf0b39fded2d4_33_new,"haxe.iterators.StringIteratorUnicode","new",0x2c3f799f,"haxe.iterators.StringIteratorUnicode.new","/opt/haxe/std/haxe/iterators/StringIteratorUnicode.hx",33,0x6d2a5ee9)

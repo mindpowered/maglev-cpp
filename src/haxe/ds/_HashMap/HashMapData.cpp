@@ -2,13 +2,13 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_IMap
-#include <maglev/haxe/IMap.h>
+#include <haxe/IMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_IntMap
-#include <maglev/haxe/ds/IntMap.h>
+#include <haxe/ds/IntMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds__HashMap_HashMapData
-#include <maglev/haxe/ds/_HashMap/HashMapData.h>
+#include <haxe/ds/_HashMap/HashMapData.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_671a2bf78f29112b_116_new,"haxe.ds._HashMap.HashMapData","new",0x79117a62,"haxe.ds._HashMap.HashMapData.new","/opt/haxe/std/haxe/ds/HashMap.hx",116,0x2e5337d1)

@@ -2,10 +2,10 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Reflect
-#include <maglev/Reflect.h>
+#include <Reflect.h>
 #endif
 #ifndef INCLUDED_haxe_Exception
-#include <maglev/haxe/Exception.h>
+#include <haxe/Exception.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_1e9e2130424fd152_30_hasField,"Reflect","hasField",0xef8c2571,"Reflect.hasField","/opt/haxe/std/cpp/_std/Reflect.hx",30,0xf1c40856)

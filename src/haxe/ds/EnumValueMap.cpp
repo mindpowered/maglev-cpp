@@ -2,25 +2,25 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Reflect
-#include <maglev/Reflect.h>
+#include <Reflect.h>
 #endif
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_Type
-#include <maglev/Type.h>
+#include <Type.h>
 #endif
 #ifndef INCLUDED_haxe_IMap
-#include <maglev/haxe/IMap.h>
+#include <haxe/IMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_BalancedTree
-#include <maglev/haxe/ds/BalancedTree.h>
+#include <haxe/ds/BalancedTree.h>
 #endif
 #ifndef INCLUDED_haxe_ds_EnumValueMap
-#include <maglev/haxe/ds/EnumValueMap.h>
+#include <haxe/ds/EnumValueMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_TreeNode
-#include <maglev/haxe/ds/TreeNode.h>
+#include <haxe/ds/TreeNode.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_c615d1819af28349_31_new,"haxe.ds.EnumValueMap","new",0x9ce29655,"haxe.ds.EnumValueMap.new","/opt/haxe/std/haxe/ds/EnumValueMap.hx",31,0xbd4e9b11)

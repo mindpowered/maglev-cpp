@@ -2,19 +2,19 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Reflect
-#include <maglev/Reflect.h>
+#include <Reflect.h>
 #endif
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_Type
-#include <maglev/Type.h>
+#include <Type.h>
 #endif
 #ifndef INCLUDED_ValueType
-#include <maglev/ValueType.h>
+#include <ValueType.h>
 #endif
 #ifndef INCLUDED_haxe_Exception
-#include <maglev/haxe/Exception.h>
+#include <haxe/Exception.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_85a1b4897d624dc1_36_getClass,"Type","getClass",0xc4e49bd6,"Type.getClass","/opt/haxe/std/cpp/_std/Type.hx",36,0xd464076f)

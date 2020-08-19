@@ -2,22 +2,22 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_StringBuf
-#include <maglev/StringBuf.h>
+#include <StringBuf.h>
 #endif
 #ifndef INCLUDED_haxe_Exception
-#include <maglev/haxe/Exception.h>
+#include <haxe/Exception.h>
 #endif
 #ifndef INCLUDED_haxe_NativeStackTrace
-#include <maglev/haxe/NativeStackTrace.h>
+#include <haxe/NativeStackTrace.h>
 #endif
 #ifndef INCLUDED_haxe_StackItem
-#include <maglev/haxe/StackItem.h>
+#include <haxe/StackItem.h>
 #endif
 #ifndef INCLUDED_haxe__CallStack_CallStack_Impl_
-#include <maglev/haxe/_CallStack/CallStack_Impl_.h>
+#include <haxe/_CallStack/CallStack_Impl_.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_b99d1ca1df6dde60_46_get_length,"haxe._CallStack.CallStack_Impl_","get_length",0xe90f0eae,"haxe._CallStack.CallStack_Impl_.get_length","/opt/haxe/std/haxe/CallStack.hx",46,0xe4bc1493)

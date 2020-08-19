@@ -2,16 +2,16 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_EReg
-#include <maglev/EReg.h>
+#include <EReg.h>
 #endif
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_StringBuf
-#include <maglev/StringBuf.h>
+#include <StringBuf.h>
 #endif
 #ifndef INCLUDED_haxe_Exception
-#include <maglev/haxe/Exception.h>
+#include <haxe/Exception.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_7950e67680857c11_28_new,"EReg","new",0x8b859e81,"EReg.new","/opt/haxe/std/cpp/_std/EReg.hx",28,0x78a10b5a)

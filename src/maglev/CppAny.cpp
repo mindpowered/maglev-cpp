@@ -10,19 +10,19 @@
 #include "hx/StdString.h"
 #endif
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_haxe_Exception
-#include <maglev/haxe/Exception.h>
+#include <haxe/Exception.h>
 #endif
 #ifndef INCLUDED_haxe_IMap
-#include <maglev/haxe/IMap.h>
+#include <haxe/IMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_StringMap
-#include <maglev/haxe/ds/StringMap.h>
+#include <haxe/ds/StringMap.h>
 #endif
 #ifndef INCLUDED_maglev_CppAny
-#include <maglev/maglev/CppAny.h>
+#include <maglev/CppAny.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_dad498497c3f302d_30_new,"maglev.CppAny","new",0x402ba9df,"maglev.CppAny.new","maglev/CppAny.hx",30,0xb88aee50)

@@ -2,13 +2,13 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_haxe_Exception
-#include <maglev/haxe/Exception.h>
+#include <haxe/Exception.h>
 #endif
 #ifndef INCLUDED_haxe_ValueException
-#include <maglev/haxe/ValueException.h>
+#include <haxe/ValueException.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_3d5abd5159d5b620_23_new,"haxe.ValueException","new",0xb19045f8,"haxe.ValueException.new","/opt/haxe/std/haxe/ValueException.hx",23,0x48548d21)

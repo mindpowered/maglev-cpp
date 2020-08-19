@@ -2,31 +2,31 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_Exception
-#include <maglev/haxe/Exception.h>
+#include <haxe/Exception.h>
 #endif
 #ifndef INCLUDED_haxe_IMap
-#include <maglev/haxe/IMap.h>
+#include <haxe/IMap.h>
 #endif
 #ifndef INCLUDED_haxe_ds_StringMap
-#include <maglev/haxe/ds/StringMap.h>
+#include <haxe/ds/StringMap.h>
 #endif
 #ifndef INCLUDED_maglev_MagLev
-#include <maglev/maglev/MagLev.h>
+#include <maglev/MagLev.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_74be3df12ab3af58_17_new,"maglev.MagLev","new",0xda2b4be0,"maglev.MagLev.new","maglev/MagLev.hx",17,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_74be3df12ab3af58_34_register,"maglev.MagLev","register",0xfe787ae3,"maglev.MagLev.register","maglev/MagLev.hx",34,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_74be3df12ab3af58_38_call,"maglev.MagLev","call",0x046ead1e,"maglev.MagLev.call","maglev/MagLev.hx",38,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_74be3df12ab3af58_45_listen,"maglev.MagLev","listen",0x385c7cc7,"maglev.MagLev.listen","maglev/MagLev.hx",45,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_74be3df12ab3af58_54_emit,"maglev.MagLev","emit",0x05ca32d3,"maglev.MagLev.emit","maglev/MagLev.hx",54,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_74be3df12ab3af58_26_getInstance,"maglev.MagLev","getInstance",0xfed3ddcb,"maglev.MagLev.getInstance","maglev/MagLev.hx",26,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_74be3df12ab3af58_19_boot,"maglev.MagLev","boot",0x03d018b2,"maglev.MagLev.boot","maglev/MagLev.hx",19,0x5b19476f)
+HX_DEFINE_STACK_FRAME(_hx_pos_74be3df12ab3af58_35_new,"maglev.MagLev","new",0xda2b4be0,"maglev.MagLev.new","maglev/MagLev.hx",35,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_74be3df12ab3af58_52_register,"maglev.MagLev","register",0xfe787ae3,"maglev.MagLev.register","maglev/MagLev.hx",52,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_74be3df12ab3af58_56_call,"maglev.MagLev","call",0x046ead1e,"maglev.MagLev.call","maglev/MagLev.hx",56,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_74be3df12ab3af58_63_listen,"maglev.MagLev","listen",0x385c7cc7,"maglev.MagLev.listen","maglev/MagLev.hx",63,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_74be3df12ab3af58_72_emit,"maglev.MagLev","emit",0x05ca32d3,"maglev.MagLev.emit","maglev/MagLev.hx",72,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_74be3df12ab3af58_44_getInstance,"maglev.MagLev","getInstance",0xfed3ddcb,"maglev.MagLev.getInstance","maglev/MagLev.hx",44,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_74be3df12ab3af58_37_boot,"maglev.MagLev","boot",0x03d018b2,"maglev.MagLev.boot","maglev/MagLev.hx",37,0x5b19476f)
 namespace maglev{
 
 void MagLev_obj::__construct(){
-            	HX_GC_STACKFRAME(&_hx_pos_74be3df12ab3af58_17_new)
-HXLINE(  21)		this->_listeners =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
-HXLINE(  20)		this->_methods =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+            	HX_GC_STACKFRAME(&_hx_pos_74be3df12ab3af58_35_new)
+HXLINE(  39)		this->_listeners =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+HXLINE(  38)		this->_methods =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
             	}
 
 Dynamic MagLev_obj::__CreateEmpty() { return new MagLev_obj; }
@@ -45,50 +45,50 @@ bool MagLev_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 void MagLev_obj::_hx_register(::String method, ::Dynamic callback){
-            	HX_STACKFRAME(&_hx_pos_74be3df12ab3af58_34_register)
-HXDLIN(  34)		this->_methods->set(method,callback);
+            	HX_STACKFRAME(&_hx_pos_74be3df12ab3af58_52_register)
+HXDLIN(  52)		this->_methods->set(method,callback);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC2(MagLev_obj,_hx_register,(void))
 
  ::Dynamic MagLev_obj::call(::String method,::cpp::VirtualArray args){
-            	HX_STACKFRAME(&_hx_pos_74be3df12ab3af58_38_call)
-HXDLIN(  38)		if (this->_methods->exists(method)) {
-HXLINE(  39)			return this->_methods->get(method)(args);
+            	HX_STACKFRAME(&_hx_pos_74be3df12ab3af58_56_call)
+HXDLIN(  56)		if (this->_methods->exists(method)) {
+HXLINE(  57)			return this->_methods->get(method)(args);
             		}
             		else {
-HXLINE(  41)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(((HX_("Method '",48,09,e1,28) + method) + HX_("' not registered",48,2b,e6,b7))));
+HXLINE(  59)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(((HX_("Method '",48,09,e1,28) + method) + HX_("' not registered",48,2b,e6,b7))));
             		}
-HXLINE(  38)		return null();
+HXLINE(  56)		return null();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC2(MagLev_obj,call,return )
 
 void MagLev_obj::listen(::String event, ::Dynamic callback){
-            	HX_STACKFRAME(&_hx_pos_74be3df12ab3af58_45_listen)
-HXLINE(  47)		if (!(this->_listeners->exists(event))) {
-HXLINE(  48)			::Dynamic this1 = this->_listeners;
-HXDLIN(  48)			::Array< ::Dynamic> v = ::Array_obj< ::Dynamic>::__new();
-HXDLIN(  48)			( ( ::haxe::ds::StringMap)(this1) )->set(event,v);
+            	HX_STACKFRAME(&_hx_pos_74be3df12ab3af58_63_listen)
+HXLINE(  65)		if (!(this->_listeners->exists(event))) {
+HXLINE(  66)			::Dynamic this1 = this->_listeners;
+HXDLIN(  66)			::Array< ::Dynamic> v = ::Array_obj< ::Dynamic>::__new();
+HXDLIN(  66)			( ( ::haxe::ds::StringMap)(this1) )->set(event,v);
             		}
-HXLINE(  50)		( (::Array< ::Dynamic>)(this->_listeners->get(event)) )->push(callback);
+HXLINE(  68)		( (::Array< ::Dynamic>)(this->_listeners->get(event)) )->push(callback);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC2(MagLev_obj,listen,(void))
 
 void MagLev_obj::emit(::String event,::cpp::VirtualArray args){
-            	HX_STACKFRAME(&_hx_pos_74be3df12ab3af58_54_emit)
-HXDLIN(  54)		if (this->_listeners->exists(event)) {
-HXLINE(  55)			::Array< ::Dynamic> listeners = ( (::Array< ::Dynamic>)(this->_listeners->get(event)) );
-HXLINE(  56)			{
-HXLINE(  56)				int _g = 0;
-HXDLIN(  56)				while((_g < listeners->length)){
-HXLINE(  56)					 ::Dynamic listener = listeners->__get(_g);
-HXDLIN(  56)					_g = (_g + 1);
-HXLINE(  57)					listener(event,args);
+            	HX_STACKFRAME(&_hx_pos_74be3df12ab3af58_72_emit)
+HXDLIN(  72)		if (this->_listeners->exists(event)) {
+HXLINE(  73)			::Array< ::Dynamic> listeners = ( (::Array< ::Dynamic>)(this->_listeners->get(event)) );
+HXLINE(  74)			{
+HXLINE(  74)				int _g = 0;
+HXDLIN(  74)				while((_g < listeners->length)){
+HXLINE(  74)					 ::Dynamic listener = listeners->__get(_g);
+HXDLIN(  74)					_g = (_g + 1);
+HXLINE(  75)					listener(event,args);
             				}
             			}
             		}
@@ -100,13 +100,13 @@ HX_DEFINE_DYNAMIC_FUNC2(MagLev_obj,emit,(void))
  ::haxe::ds::StringMap MagLev_obj::_instances;
 
  ::maglev::MagLev MagLev_obj::getInstance(::String key){
-            	HX_GC_STACKFRAME(&_hx_pos_74be3df12ab3af58_26_getInstance)
-HXLINE(  27)		if (!(::maglev::MagLev_obj::_instances->exists(key))) {
-HXLINE(  28)			::Dynamic this1 = ::maglev::MagLev_obj::_instances;
-HXDLIN(  28)			 ::maglev::MagLev v =  ::maglev::MagLev_obj::__alloc( HX_CTX );
-HXDLIN(  28)			( ( ::haxe::ds::StringMap)(this1) )->set(key,v);
+            	HX_GC_STACKFRAME(&_hx_pos_74be3df12ab3af58_44_getInstance)
+HXLINE(  45)		if (!(::maglev::MagLev_obj::_instances->exists(key))) {
+HXLINE(  46)			::Dynamic this1 = ::maglev::MagLev_obj::_instances;
+HXDLIN(  46)			 ::maglev::MagLev v =  ::maglev::MagLev_obj::__alloc( HX_CTX );
+HXDLIN(  46)			( ( ::haxe::ds::StringMap)(this1) )->set(key,v);
             		}
-HXLINE(  30)		return ( ( ::maglev::MagLev)(::maglev::MagLev_obj::_instances->get(key)) );
+HXLINE(  48)		return ( ( ::maglev::MagLev)(::maglev::MagLev_obj::_instances->get(key)) );
             	}
 
 
@@ -274,8 +274,8 @@ void MagLev_obj::__register()
 void MagLev_obj::__boot()
 {
 {
-            	HX_GC_STACKFRAME(&_hx_pos_74be3df12ab3af58_19_boot)
-HXDLIN(  19)		_instances =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+            	HX_GC_STACKFRAME(&_hx_pos_74be3df12ab3af58_37_boot)
+HXDLIN(  37)		_instances =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
             	}
 }
 

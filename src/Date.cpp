@@ -2,13 +2,13 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Date
-#include <maglev/Date.h>
+#include <Date.h>
 #endif
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_haxe_Exception
-#include <maglev/haxe/Exception.h>
+#include <haxe/Exception.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_1683fafb3d790231_26_new,"Date","new",0x9aa26240,"Date.new","/opt/haxe/std/cpp/_std/Date.hx",26,0xf016447b)

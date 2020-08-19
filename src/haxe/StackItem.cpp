@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_StackItem
-#include <maglev/haxe/StackItem.h>
+#include <haxe/StackItem.h>
 #endif
 namespace haxe{
 

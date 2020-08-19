@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_iterators_StringIterator
-#include <maglev/haxe/iterators/StringIterator.h>
+#include <haxe/iterators/StringIterator.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_c6d547f8dc5a2e0b_31_new,"haxe.iterators.StringIterator","new",0x04de7dc2,"haxe.iterators.StringIterator.new","/opt/haxe/std/haxe/iterators/StringIterator.hx",31,0x1f4398b6)

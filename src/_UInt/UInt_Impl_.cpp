@@ -2,10 +2,10 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED__UInt_UInt_Impl_
-#include <maglev/_UInt/UInt_Impl_.h>
+#include <_UInt/UInt_Impl_.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_bed2f9fcc38c1445_135_add,"_UInt.UInt_Impl_","add",0x721d7cc2,"_UInt.UInt_Impl_.add","/opt/haxe/std/UInt.hx",135,0xdee7de5a)

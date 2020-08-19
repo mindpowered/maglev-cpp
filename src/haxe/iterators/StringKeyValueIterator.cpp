@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_iterators_StringKeyValueIterator
-#include <maglev/haxe/iterators/StringKeyValueIterator.h>
+#include <haxe/iterators/StringKeyValueIterator.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_bc82f9e51be3c897_31_new,"haxe.iterators.StringKeyValueIterator","new",0x47385434,"haxe.iterators.StringKeyValueIterator.new","/opt/haxe/std/haxe/iterators/StringKeyValueIterator.hx",31,0x4a21de84)

@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_3747694a03d66f46_25_is,"Std","is",0x3c56d6f5,"Std.is","/opt/haxe/std/cpp/_std/Std.hx",25,0x9963e930)

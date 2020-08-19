@@ -2,10 +2,10 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_Std
-#include <maglev/Std.h>
+#include <Std.h>
 #endif
 #ifndef INCLUDED_haxe_ds_TreeNode
-#include <maglev/haxe/ds/TreeNode.h>
+#include <haxe/ds/TreeNode.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_b4fb533f9915bd70_252_new,"haxe.ds.TreeNode","new",0x88d32f89,"haxe.ds.TreeNode.new","/opt/haxe/std/haxe/ds/BalancedTree.hx",252,0xe5e8edd7)

@@ -2,7 +2,7 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_iterators_ArrayIterator
-#include <maglev/haxe/iterators/ArrayIterator.h>
+#include <haxe/iterators/ArrayIterator.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_2dcd5cbcaa98c3ab_28_new,"haxe.iterators.ArrayIterator","new",0x70a754c8,"haxe.iterators.ArrayIterator.new","/opt/haxe/std/haxe/iterators/ArrayIterator.hx",28,0x39f8e3e0)

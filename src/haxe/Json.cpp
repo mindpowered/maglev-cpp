@@ -2,13 +2,13 @@
 #include <hxcpp.h>
 
 #ifndef INCLUDED_haxe_Json
-#include <maglev/haxe/Json.h>
+#include <haxe/Json.h>
 #endif
 #ifndef INCLUDED_haxe_format_JsonParser
-#include <maglev/haxe/format/JsonParser.h>
+#include <haxe/format/JsonParser.h>
 #endif
 #ifndef INCLUDED_haxe_format_JsonPrinter
-#include <maglev/haxe/format/JsonPrinter.h>
+#include <haxe/format/JsonPrinter.h>
 #endif
 
 HX_LOCAL_STACK_FRAME(_hx_pos_884aa1fb6b3b7ff9_44_parse,"haxe.Json","parse",0x396f54d5,"haxe.Json.parse","/opt/haxe/std/haxe/Json.hx",44,0x9afd6c97)
