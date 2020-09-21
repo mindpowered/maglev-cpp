@@ -348,6 +348,11 @@ HX_DEFINE_DYNAMIC_FUNC1(List_obj,map,return )
 }
 
 ::hx::ObjectPtr< List_obj > List_obj::__alloc(::hx::Ctx *_hx_ctx) {
+	static bool registered=false;
+	if (!registered) {
+		__register();
+		registered = true;
+	}
 	List_obj *__this = (List_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(List_obj), true, "haxe.ds.List"));
 	*(void **)__this = List_obj::_hx_vtable;
 	__this->__construct();

@@ -45,6 +45,11 @@ bool HashMapData_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 ::hx::ObjectPtr< HashMapData_obj > HashMapData_obj::__alloc(::hx::Ctx *_hx_ctx) {
+	static bool registered=false;
+	if (!registered) {
+		__register();
+		registered = true;
+	}
 	HashMapData_obj *__this = (HashMapData_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(HashMapData_obj), true, "haxe.ds._HashMap.HashMapData"));
 	*(void **)__this = HashMapData_obj::_hx_vtable;
 	__this->__construct();

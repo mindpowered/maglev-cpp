@@ -400,6 +400,11 @@ HXLINE( 268)		return arr;
 }
 
 ::hx::ObjectPtr< CppAny_obj > CppAny_obj::__alloc(::hx::Ctx *_hx_ctx) {
+	static bool registered=false;
+	if (!registered) {
+		__register();
+		registered = true;
+	}
 	CppAny_obj *__this = (CppAny_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(CppAny_obj), true, "maglev.CppAny"));
 	*(void **)__this = CppAny_obj::_hx_vtable;
 	__this->__construct();

@@ -188,6 +188,11 @@ HX_DEFINE_DYNAMIC_FUNC0(IntMap_obj,clear,(void))
 }
 
 ::hx::ObjectPtr< IntMap_obj > IntMap_obj::__alloc(::hx::Ctx *_hx_ctx) {
+	static bool registered=false;
+	if (!registered) {
+		__register();
+		registered = true;
+	}
 	IntMap_obj *__this = (IntMap_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(IntMap_obj), true, "haxe.ds.IntMap"));
 	*(void **)__this = IntMap_obj::_hx_vtable;
 	__this->__construct();

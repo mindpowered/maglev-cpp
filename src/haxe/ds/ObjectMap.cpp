@@ -176,6 +176,11 @@ HX_DEFINE_DYNAMIC_FUNC0(ObjectMap_obj,clear,(void))
 }
 
 ::hx::ObjectPtr< ObjectMap_obj > ObjectMap_obj::__alloc(::hx::Ctx *_hx_ctx) {
+	static bool registered=false;
+	if (!registered) {
+		__register();
+		registered = true;
+	}
 	ObjectMap_obj *__this = (ObjectMap_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(ObjectMap_obj), true, "haxe.ds.ObjectMap"));
 	*(void **)__this = ObjectMap_obj::_hx_vtable;
 	__this->__construct();
