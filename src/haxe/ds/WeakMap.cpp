@@ -176,11 +176,6 @@ HX_DEFINE_DYNAMIC_FUNC0(WeakMap_obj,clear,(void))
 }
 
 ::hx::ObjectPtr< WeakMap_obj > WeakMap_obj::__alloc(::hx::Ctx *_hx_ctx) {
-	static bool registered=false;
-	if (!registered) {
-		__register();
-		registered = true;
-	}
 	WeakMap_obj *__this = (WeakMap_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(WeakMap_obj), true, "haxe.ds.WeakMap"));
 	*(void **)__this = WeakMap_obj::_hx_vtable;
 	__this->__construct();

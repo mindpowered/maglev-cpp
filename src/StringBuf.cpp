@@ -182,11 +182,6 @@ HX_DEFINE_DYNAMIC_FUNC0(StringBuf_obj,toString,return )
 }
 
 ::hx::ObjectPtr< StringBuf_obj > StringBuf_obj::__alloc(::hx::Ctx *_hx_ctx) {
-	static bool registered=false;
-	if (!registered) {
-		__register();
-		registered = true;
-	}
 	StringBuf_obj *__this = (StringBuf_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(StringBuf_obj), true, "StringBuf"));
 	*(void **)__this = StringBuf_obj::_hx_vtable;
 	__this->__construct();

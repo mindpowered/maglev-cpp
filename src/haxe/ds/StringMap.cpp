@@ -188,11 +188,6 @@ HX_DEFINE_DYNAMIC_FUNC0(StringMap_obj,clear,(void))
 }
 
 ::hx::ObjectPtr< StringMap_obj > StringMap_obj::__alloc(::hx::Ctx *_hx_ctx) {
-	static bool registered=false;
-	if (!registered) {
-		__register();
-		registered = true;
-	}
 	StringMap_obj *__this = (StringMap_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(StringMap_obj), true, "haxe.ds.StringMap"));
 	*(void **)__this = StringMap_obj::_hx_vtable;
 	__this->__construct();

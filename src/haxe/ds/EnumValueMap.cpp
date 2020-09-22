@@ -180,11 +180,6 @@ HXLINE(  68)		return copied;
 }
 
 ::hx::ObjectPtr< EnumValueMap_obj > EnumValueMap_obj::__alloc(::hx::Ctx *_hx_ctx) {
-	static bool registered=false;
-	if (!registered) {
-		__register();
-		registered = true;
-	}
 	EnumValueMap_obj *__this = (EnumValueMap_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(EnumValueMap_obj), true, "haxe.ds.EnumValueMap"));
 	*(void **)__this = EnumValueMap_obj::_hx_vtable;
 	__this->__construct();

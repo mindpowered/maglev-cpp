@@ -482,11 +482,6 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC2(BalancedTree_obj,iteratorLoop,(void))
 }
 
 ::hx::ObjectPtr< BalancedTree_obj > BalancedTree_obj::__alloc(::hx::Ctx *_hx_ctx) {
-	static bool registered=false;
-	if (!registered) {
-		__register();
-		registered = true;
-	}
 	BalancedTree_obj *__this = (BalancedTree_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(BalancedTree_obj), true, "haxe.ds.BalancedTree"));
 	*(void **)__this = BalancedTree_obj::_hx_vtable;
 	__this->__construct();

@@ -120,11 +120,6 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(MagLev_obj,getInstance,return )
 }
 
 ::hx::ObjectPtr< MagLev_obj > MagLev_obj::__alloc(::hx::Ctx *_hx_ctx) {
-	static bool registered=false;
-	if (!registered) {
-		__register();
-		registered = true;
-	}
 	MagLev_obj *__this = (MagLev_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(MagLev_obj), true, "maglev.MagLev"));
 	*(void **)__this = MagLev_obj::_hx_vtable;
 	__this->__construct();

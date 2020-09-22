@@ -141,11 +141,6 @@ HX_DEFINE_DYNAMIC_FUNC0(GenericStack_obj,toString,return )
 }
 
 ::hx::ObjectPtr< GenericStack_obj > GenericStack_obj::__alloc(::hx::Ctx *_hx_ctx) {
-	static bool registered=false;
-	if (!registered) {
-		__register();
-		registered = true;
-	}
 	GenericStack_obj *__this = (GenericStack_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(GenericStack_obj), true, "haxe.ds.GenericStack"));
 	*(void **)__this = GenericStack_obj::_hx_vtable;
 	__this->__construct();
