@@ -231,6 +231,19 @@
    <depend name="include/haxe/format/JsonParser.h" />
    <depend name="include/haxe/format/JsonPrinter.h" />
   </file>
+  <file name="src/haxe/Int64Helper.cpp">
+   <depend name="include/StringTools.h" />
+   <depend name="include/haxe/Exception.h" />
+   <depend name="include/haxe/Int64Helper.h" />
+  </file>
+  <file name="src/haxe/_Int64/Int64_Impl_.cpp">
+   <depend name="include/haxe/Exception.h" />
+   <depend name="include/haxe/Int64Helper.h" />
+   <depend name="include/haxe/_Int64/Int64_Impl_.h" />
+  </file>
+  <file name="src/haxe/_Int32/Int32_Impl_.cpp">
+   <depend name="include/haxe/_Int32/Int32_Impl_.h" />
+  </file>
   <file name="src/haxe/Exception.cpp">
    <depend name="include/Std.h" />
    <depend name="include/haxe/Exception.h" />

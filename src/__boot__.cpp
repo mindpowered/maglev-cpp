@@ -151,6 +151,15 @@
 #ifndef INCLUDED_haxe_Json
 #include <haxe/Json.h>
 #endif
+#ifndef INCLUDED_haxe_Int64Helper
+#include <haxe/Int64Helper.h>
+#endif
+#ifndef INCLUDED_haxe__Int64_Int64_Impl_
+#include <haxe/_Int64/Int64_Impl_.h>
+#endif
+#ifndef INCLUDED_haxe__Int32_Int32_Impl_
+#include <haxe/_Int32/Int32_Impl_.h>
+#endif
 #ifndef INCLUDED_haxe_Exception
 #include <haxe/Exception.h>
 #endif
@@ -247,6 +256,9 @@ __files__boot();
 ::haxe::ValueException_obj::__register();
 ::haxe::NativeStackTrace_obj::__register();
 ::haxe::Json_obj::__register();
+::haxe::Int64Helper_obj::__register();
+::haxe::_Int64::Int64_Impl__obj::__register();
+::haxe::_Int32::Int32_Impl__obj::__register();
 ::haxe::Exception_obj::__register();
 ::haxe::IMap_obj::__register();
 ::haxe::_CallStack::CallStack_Impl__obj::__register();
