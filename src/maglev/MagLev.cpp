@@ -140,7 +140,14 @@ STATIC_HX_DEFINE_DYNAMIC_FUNC1(MagLev_obj,getInstance,return )
  ::Dynamic MagLev_obj::clean( ::Dynamic arg){
             	HX_GC_STACKFRAME(&_hx_pos_74be3df12ab3af58_92_clean)
 HXDLIN(  92)		bool _hx_tmp;
-HXDLIN(  92)		if (::Reflect_obj::isObject(arg)) {
+HXDLIN(  92)		bool _hx_tmp1;
+HXDLIN(  92)		if (!(::Std_obj::isOfType(arg,( ( ::Dynamic)(::hx::ClassOf< ::String >()) )))) {
+HXDLIN(  92)			_hx_tmp1 = ::Reflect_obj::isObject(arg);
+            		}
+            		else {
+HXDLIN(  92)			_hx_tmp1 = false;
+            		}
+HXDLIN(  92)		if (_hx_tmp1) {
 HXDLIN(  92)			_hx_tmp = !(::Std_obj::isOfType(arg,( ( ::Dynamic)(::hx::ClassOf< ::haxe::IMap >()) )));
             		}
             		else {
