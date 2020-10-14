@@ -8,8 +8,6 @@
    <depend name="include/maglev/MagLevCpp.h" />
   </file>
   <file name="src/maglev/MagLev.cpp">
-   <depend name="include/Reflect.h" />
-   <depend name="include/Std.h" />
    <depend name="include/haxe/Exception.h" />
    <depend name="include/haxe/IMap.h" />
    <depend name="include/haxe/ds/StringMap.h" />
