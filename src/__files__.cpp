@@ -56,6 +56,8 @@ const char *__hxcpp_all_files[] = {
 "maglev/CppCallback.hx",
 "maglev/MagLev.hx",
 "maglev/MagLevCpp.hx",
+"maglev/MagLevOld.hx",
+"maglev/MagLevTypes.hx",
 #endif
  0 };
 
@@ -113,6 +115,8 @@ const char *__hxcpp_all_files_fullpath[] = {
 "/my-component/src/maglev/CppCallback.hx",
 "/my-component/src/maglev/MagLev.hx",
 "/my-component/src/maglev/MagLevCpp.hx",
+"/my-component/src/maglev/MagLevOld.hx",
+"/my-component/src/maglev/MagLevTypes.hx",
 #endif
  0 };
 
@@ -179,6 +183,17 @@ const char *__hxcpp_all_classes[] = {
 "maglev.CppCallbackPtr",
 "maglev.MagLev",
 "maglev.MagLevCpp",
+"maglev.MagLevOld",
+"maglev.MagLevResult",
+"maglev.MagLevError",
+"maglev.MagLevAny",
+"maglev.MagLevFunction",
+"maglev.MagLevObject",
+"maglev.MagLevArray",
+"maglev.MagLevNumber",
+"maglev.MagLevString",
+"maglev.MagLevBoolean",
+"maglev.MagLevNull",
 #endif
  0 };
 } // namespace hx

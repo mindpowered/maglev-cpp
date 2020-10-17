@@ -16,11 +16,11 @@
 #ifndef INCLUDED_maglev_CppAny
 #include <maglev/CppAny.h>
 #endif
-#ifndef INCLUDED_maglev_MagLev
-#include <maglev/MagLev.h>
-#endif
 #ifndef INCLUDED_maglev_MagLevCpp
 #include <maglev/MagLevCpp.h>
+#endif
+#ifndef INCLUDED_maglev_MagLevOld
+#include <maglev/MagLevOld.h>
 #endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_463dba869de52960_22_new,"maglev.MagLevCpp","new",0x153a7547,"maglev.MagLevCpp.new","maglev/MagLevCpp.hx",22,0x0d988d8a)
@@ -37,7 +37,7 @@ HX_LOCAL_STACK_FRAME(_hx_pos_463dba869de52960_101_AnyArrayToCppAnyVector,"maglev
 HX_LOCAL_STACK_FRAME(_hx_pos_463dba869de52960_26_getInstance,"maglev.MagLevCpp","getInstance",0xe9d54632,"maglev.MagLevCpp.getInstance","maglev/MagLevCpp.hx",26,0x0d988d8a)
 namespace maglev{
 
-void MagLevCpp_obj::__construct( ::maglev::MagLev maglev){
+void MagLevCpp_obj::__construct( ::maglev::MagLevOld maglev){
             	HX_STACKFRAME(&_hx_pos_463dba869de52960_22_new)
 HXDLIN(  22)		this->maglev = maglev;
             	}
@@ -162,19 +162,19 @@ HXLINE( 110)		return vec;
  ::maglev::MagLevCpp MagLevCpp_obj::getInstance( hx::StdString cppKey){
             	HX_GC_STACKFRAME(&_hx_pos_463dba869de52960_26_getInstance)
 HXLINE(  27)		::String key = cppKey.toString();
-HXLINE(  28)		 ::maglev::MagLevCpp instance =  ::maglev::MagLevCpp_obj::__alloc( HX_CTX ,::maglev::MagLev_obj::getInstance(key));
+HXLINE(  28)		 ::maglev::MagLevCpp instance =  ::maglev::MagLevCpp_obj::__alloc( HX_CTX ,::maglev::MagLevOld_obj::getInstance(key));
 HXLINE(  29)		return instance;
             	}
 
 
 
-::hx::ObjectPtr< MagLevCpp_obj > MagLevCpp_obj::__new( ::maglev::MagLev maglev) {
+::hx::ObjectPtr< MagLevCpp_obj > MagLevCpp_obj::__new( ::maglev::MagLevOld maglev) {
 	::hx::ObjectPtr< MagLevCpp_obj > __this = new MagLevCpp_obj();
 	__this->__construct(maglev);
 	return __this;
 }
 
-::hx::ObjectPtr< MagLevCpp_obj > MagLevCpp_obj::__alloc(::hx::Ctx *_hx_ctx, ::maglev::MagLev maglev) {
+::hx::ObjectPtr< MagLevCpp_obj > MagLevCpp_obj::__alloc(::hx::Ctx *_hx_ctx, ::maglev::MagLevOld maglev) {
 	MagLevCpp_obj *__this = (MagLevCpp_obj*)(::hx::Ctx::alloc(_hx_ctx, sizeof(MagLevCpp_obj), true, "maglev.MagLevCpp"));
 	*(void **)__this = MagLevCpp_obj::_hx_vtable;
 	__this->__construct(maglev);
@@ -214,7 +214,7 @@ void MagLevCpp_obj::__Visit(HX_VISIT_PARAMS)
 {
 	switch(inName.length) {
 	case 6:
-		if (HX_FIELD_EQ(inName,"maglev") ) { maglev=inValue.Cast<  ::maglev::MagLev >(); return inValue; }
+		if (HX_FIELD_EQ(inName,"maglev") ) { maglev=inValue.Cast<  ::maglev::MagLevOld >(); return inValue; }
 	}
 	return super::__SetField(inName,inValue,inCallProp);
 }
@@ -227,7 +227,7 @@ void MagLevCpp_obj::__GetFields(Array< ::String> &outFields)
 
 #ifdef HXCPP_SCRIPTABLE
 static ::hx::StorageInfo MagLevCpp_obj_sMemberStorageInfo[] = {
-	{::hx::fsObject /*  ::maglev::MagLev */ ,(int)offsetof(MagLevCpp_obj,maglev),HX_("maglev",2a,df,2b,b3)},
+	{::hx::fsObject /*  ::maglev::MagLevOld */ ,(int)offsetof(MagLevCpp_obj,maglev),HX_("maglev",2a,df,2b,b3)},
 	{ ::hx::fsUnknown, 0, null()}
 };
 static ::hx::StaticInfo *MagLevCpp_obj_sStaticStorageInfo = 0;

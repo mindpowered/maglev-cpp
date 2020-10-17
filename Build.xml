@@ -2,16 +2,111 @@
 <set name="HXCPP_API_LEVEL" value="400" />
 <files id="haxe">
 <compilerflag value="-Iinclude" />
+  <file name="src/maglev/MagLevNull.cpp">
+   <depend name="include/maglev/MagLevAny.h" />
+   <depend name="include/maglev/MagLevNull.h" />
+   <depend name="include/maglev/MagLevString.h" />
+   <depend name="include/maglev/MagLevType.h" />
+  </file>
+  <file name="src/maglev/MagLevBoolean.cpp">
+   <depend name="include/maglev/MagLevAny.h" />
+   <depend name="include/maglev/MagLevBoolean.h" />
+   <depend name="include/maglev/MagLevString.h" />
+   <depend name="include/maglev/MagLevType.h" />
+  </file>
+  <file name="src/maglev/MagLevString.cpp">
+   <depend name="include/maglev/MagLevAny.h" />
+   <depend name="include/maglev/MagLevString.h" />
+   <depend name="include/maglev/MagLevType.h" />
+  </file>
+  <file name="src/maglev/MagLevNumber.cpp">
+   <depend name="include/Std.h" />
+   <depend name="include/maglev/MagLevAny.h" />
+   <depend name="include/maglev/MagLevNumber.h" />
+   <depend name="include/maglev/MagLevString.h" />
+   <depend name="include/maglev/MagLevType.h" />
+  </file>
+  <file name="src/maglev/MagLevArray.cpp">
+   <depend name="include/maglev/MagLevAny.h" />
+   <depend name="include/maglev/MagLevArray.h" />
+   <depend name="include/maglev/MagLevNull.h" />
+   <depend name="include/maglev/MagLevString.h" />
+   <depend name="include/maglev/MagLevType.h" />
+  </file>
+  <file name="src/maglev/MagLevObject.cpp">
+   <depend name="include/Std.h" />
+   <depend name="include/haxe/IMap.h" />
+   <depend name="include/haxe/ds/StringMap.h" />
+   <depend name="include/maglev/MagLevAny.h" />
+   <depend name="include/maglev/MagLevArray.h" />
+   <depend name="include/maglev/MagLevNull.h" />
+   <depend name="include/maglev/MagLevObject.h" />
+   <depend name="include/maglev/MagLevString.h" />
+   <depend name="include/maglev/MagLevType.h" />
+  </file>
+  <file name="src/maglev/MagLevFunction.cpp">
+   <depend name="include/maglev/MagLevAny.h" />
+   <depend name="include/maglev/MagLevArray.h" />
+   <depend name="include/maglev/MagLevFunction.h" />
+   <depend name="include/maglev/MagLevResult.h" />
+   <depend name="include/maglev/MagLevString.h" />
+   <depend name="include/maglev/MagLevType.h" />
+  </file>
+  <file name="src/maglev/MagLevAny.cpp">
+   <depend name="include/haxe/Exception.h" />
+   <depend name="include/maglev/MagLevAny.h" />
+   <depend name="include/maglev/MagLevString.h" />
+   <depend name="include/maglev/MagLevType.h" />
+  </file>
+  <file name="src/maglev/MagLevError.cpp">
+   <depend name="include/Std.h" />
+   <depend name="include/maglev/MagLevAny.h" />
+   <depend name="include/maglev/MagLevError.h" />
+   <depend name="include/maglev/MagLevNumber.h" />
+   <depend name="include/maglev/MagLevString.h" />
+   <depend name="include/maglev/MagLevType.h" />
+  </file>
+  <file name="src/maglev/MagLevResult.cpp">
+   <depend name="include/maglev/MagLevAny.h" />
+   <depend name="include/maglev/MagLevError.h" />
+   <depend name="include/maglev/MagLevNull.h" />
+   <depend name="include/maglev/MagLevResult.h" />
+   <depend name="include/maglev/MagLevString.h" />
+   <depend name="include/maglev/MagLevType.h" />
+  </file>
+  <file name="src/maglev/MagLevType.cpp">
+   <depend name="include/maglev/MagLevType.h" />
+  </file>
+  <file name="src/maglev/MagLevOld.cpp">
+   <depend name="include/Std.h" />
+   <depend name="include/haxe/Exception.h" />
+   <depend name="include/maglev/MagLev.h" />
+   <depend name="include/maglev/MagLevAny.h" />
+   <depend name="include/maglev/MagLevArray.h" />
+   <depend name="include/maglev/MagLevError.h" />
+   <depend name="include/maglev/MagLevFunction.h" />
+   <depend name="include/maglev/MagLevOld.h" />
+   <depend name="include/maglev/MagLevResult.h" />
+   <depend name="include/maglev/MagLevString.h" />
+   <depend name="include/maglev/MagLevType.h" />
+  </file>
   <file name="src/maglev/MagLevCpp.cpp">
    <depend name="include/maglev/CppAny.h" />
-   <depend name="include/maglev/MagLev.h" />
    <depend name="include/maglev/MagLevCpp.h" />
+   <depend name="include/maglev/MagLevOld.h" />
   </file>
   <file name="src/maglev/MagLev.cpp">
-   <depend name="include/haxe/Exception.h" />
    <depend name="include/haxe/IMap.h" />
    <depend name="include/haxe/ds/StringMap.h" />
    <depend name="include/maglev/MagLev.h" />
+   <depend name="include/maglev/MagLevAny.h" />
+   <depend name="include/maglev/MagLevArray.h" />
+   <depend name="include/maglev/MagLevError.h" />
+   <depend name="include/maglev/MagLevFunction.h" />
+   <depend name="include/maglev/MagLevNull.h" />
+   <depend name="include/maglev/MagLevNumber.h" />
+   <depend name="include/maglev/MagLevResult.h" />
+   <depend name="include/maglev/MagLevString.h" />
   </file>
   <file name="src/maglev/CppCallbackPtr.cpp">
    <depend name="include/Std.h" />
@@ -345,6 +440,7 @@
    <depend name="include/haxe/Exception.h" />
   </file>
   <file name="src/__boot__.cpp">
+   <depend name="include/maglev/MagLevType.h" />
    <depend name="include/haxe/ds/Option.h" />
    <depend name="include/haxe/ds/Either.h" />
    <depend name="include/haxe/StackItem.h" />
@@ -364,6 +460,7 @@
   <file name="src/__resources__.cpp">
   </file>
 <file name="src/__boot_maglev.cpp">
+   <depend name="include/maglev/MagLevType.h" />
    <depend name="include/haxe/ds/Option.h" />
    <depend name="include/haxe/ds/Either.h" />
    <depend name="include/haxe/StackItem.h" />
