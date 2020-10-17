@@ -9,7 +9,6 @@
 HX_DECLARE_CLASS1(maglev,MagLev)
 HX_DECLARE_CLASS1(maglev,MagLevAny)
 HX_DECLARE_CLASS1(maglev,MagLevOld)
-HX_DECLARE_CLASS1(maglev,MagLevString)
 
 namespace maglev{
 
@@ -63,10 +62,10 @@ class HXCPP_CLASS_ATTRIBUTES MagLevOld_obj : public ::hx::Object
 		void emit(::String event,::cpp::VirtualArray args);
 		::Dynamic emit_dyn();
 
-		::String convertToHaxe( ::maglev::MagLevAny x);
+		 ::Dynamic convertToHaxe( ::maglev::MagLevAny x);
 		::Dynamic convertToHaxe_dyn();
 
-		 ::maglev::MagLevString convertToMagLev( ::Dynamic x);
+		 ::maglev::MagLevAny convertToMagLev( ::Dynamic x);
 		::Dynamic convertToMagLev_dyn();
 
 };

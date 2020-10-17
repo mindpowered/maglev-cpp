@@ -78,13 +78,20 @@
    <depend name="include/maglev/MagLevType.h" />
   </file>
   <file name="src/maglev/MagLevOld.cpp">
+   <depend name="include/Reflect.h" />
    <depend name="include/Std.h" />
    <depend name="include/haxe/Exception.h" />
+   <depend name="include/haxe/IMap.h" />
+   <depend name="include/haxe/ds/StringMap.h" />
    <depend name="include/maglev/MagLev.h" />
    <depend name="include/maglev/MagLevAny.h" />
    <depend name="include/maglev/MagLevArray.h" />
+   <depend name="include/maglev/MagLevBoolean.h" />
    <depend name="include/maglev/MagLevError.h" />
    <depend name="include/maglev/MagLevFunction.h" />
+   <depend name="include/maglev/MagLevNull.h" />
+   <depend name="include/maglev/MagLevNumber.h" />
+   <depend name="include/maglev/MagLevObject.h" />
    <depend name="include/maglev/MagLevOld.h" />
    <depend name="include/maglev/MagLevResult.h" />
    <depend name="include/maglev/MagLevString.h" />
