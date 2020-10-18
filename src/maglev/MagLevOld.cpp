@@ -59,12 +59,12 @@
 HX_DEFINE_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_45_new,"maglev.MagLevOld","new",0x85ff9ecb,"maglev.MagLevOld.new","maglev/MagLevOld.hx",45,0x84580086)
 HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_54_register,"maglev.MagLevOld","register",0x2b98b418,"maglev.MagLevOld.register","maglev/MagLevOld.hx",54,0x84580086)
 HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_53_register,"maglev.MagLevOld","register",0x2b98b418,"maglev.MagLevOld.register","maglev/MagLevOld.hx",53,0x84580086)
-HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_67_call,"maglev.MagLevOld","call",0xb262e7d3,"maglev.MagLevOld.call","maglev/MagLevOld.hx",67,0x84580086)
-HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_82_listen,"maglev.MagLevOld","listen",0x77dc8ebc,"maglev.MagLevOld.listen","maglev/MagLevOld.hx",82,0x84580086)
-HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_80_listen,"maglev.MagLevOld","listen",0x77dc8ebc,"maglev.MagLevOld.listen","maglev/MagLevOld.hx",80,0x84580086)
-HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_95_emit,"maglev.MagLevOld","emit",0xb3be6d88,"maglev.MagLevOld.emit","maglev/MagLevOld.hx",95,0x84580086)
-HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_104_convertToHaxe,"maglev.MagLevOld","convertToHaxe",0xf6cbabbf,"maglev.MagLevOld.convertToHaxe","maglev/MagLevOld.hx",104,0x84580086)
-HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_145_convertToMagLev,"maglev.MagLevOld","convertToMagLev",0xf656e6e3,"maglev.MagLevOld.convertToMagLev","maglev/MagLevOld.hx",145,0x84580086)
+HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_68_call,"maglev.MagLevOld","call",0xb262e7d3,"maglev.MagLevOld.call","maglev/MagLevOld.hx",68,0x84580086)
+HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_83_listen,"maglev.MagLevOld","listen",0x77dc8ebc,"maglev.MagLevOld.listen","maglev/MagLevOld.hx",83,0x84580086)
+HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_81_listen,"maglev.MagLevOld","listen",0x77dc8ebc,"maglev.MagLevOld.listen","maglev/MagLevOld.hx",81,0x84580086)
+HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_97_emit,"maglev.MagLevOld","emit",0xb3be6d88,"maglev.MagLevOld.emit","maglev/MagLevOld.hx",97,0x84580086)
+HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_106_convertToHaxe,"maglev.MagLevOld","convertToHaxe",0xf6cbabbf,"maglev.MagLevOld.convertToHaxe","maglev/MagLevOld.hx",106,0x84580086)
+HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_149_convertToMagLev,"maglev.MagLevOld","convertToMagLev",0xf656e6e3,"maglev.MagLevOld.convertToMagLev","maglev/MagLevOld.hx",149,0x84580086)
 HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_48_getInstance,"maglev.MagLevOld","getInstance",0x95e593b6,"maglev.MagLevOld.getInstance","maglev/MagLevOld.hx",48,0x84580086)
 namespace maglev{
 
@@ -97,42 +97,43 @@ HXLINE(  56)			int i = 0;
 HXLINE(  57)			while((i < args->size())){
 HXLINE(  58)				 ::maglev::MagLevOld _gthis1 = _gthis;
 HXDLIN(  58)				arr->push(_gthis1->convertToHaxe(args->get(i)));
+HXLINE(  59)				i = (i + 1);
             			}
-HXLINE(  60)			 ::maglev::MagLevOld _gthis1 = _gthis;
-HXDLIN(  60)			 ::maglev::MagLevAny result = _gthis1->convertToMagLev(callback(arr));
-HXLINE(  61)			return ::maglev::MagLevResult_obj::fromResult(result);
+HXLINE(  61)			 ::maglev::MagLevOld _gthis1 = _gthis;
+HXDLIN(  61)			 ::maglev::MagLevAny result = _gthis1->convertToMagLev(callback(arr));
+HXLINE(  62)			return ::maglev::MagLevResult_obj::fromResult(result);
             		}
             		HX_END_LOCAL_FUNC1(return)
 
             	HX_GC_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_53_register)
 HXDLIN(  53)		 ::maglev::MagLevOld _gthis = ::hx::ObjectPtr<OBJ_>(this);
 HXLINE(  54)		 ::Dynamic myfunc =  ::Dynamic(new _hx_Closure_0(_gthis,callback));
-HXLINE(  63)		 ::maglev::MagLevFunction mycallback =  ::maglev::MagLevFunction_obj::__alloc( HX_CTX ,myfunc,null());
-HXLINE(  64)		this->maglev->_hx_register(method,mycallback);
+HXLINE(  64)		 ::maglev::MagLevFunction mycallback =  ::maglev::MagLevFunction_obj::__alloc( HX_CTX ,myfunc,null());
+HXLINE(  65)		this->maglev->_hx_register(method,mycallback);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC2(MagLevOld_obj,_hx_register,(void))
 
  ::Dynamic MagLevOld_obj::call(::String method,::cpp::VirtualArray args){
-            	HX_GC_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_67_call)
-HXLINE(  68)		 ::maglev::MagLevArray myargs =  ::maglev::MagLevArray_obj::__alloc( HX_CTX );
-HXLINE(  69)		{
-HXLINE(  69)			int _g = 0;
-HXDLIN(  69)			while((_g < args->get_length())){
-HXLINE(  69)				 ::Dynamic arg = args->__get(_g);
-HXDLIN(  69)				_g = (_g + 1);
-HXLINE(  70)				myargs->push(this->convertToMagLev(arg));
+            	HX_GC_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_68_call)
+HXLINE(  69)		 ::maglev::MagLevArray myargs =  ::maglev::MagLevArray_obj::__alloc( HX_CTX );
+HXLINE(  70)		{
+HXLINE(  70)			int _g = 0;
+HXDLIN(  70)			while((_g < args->get_length())){
+HXLINE(  70)				 ::Dynamic arg = args->__get(_g);
+HXDLIN(  70)				_g = (_g + 1);
+HXLINE(  71)				myargs->push(this->convertToMagLev(arg));
             			}
             		}
-HXLINE(  72)		 ::maglev::MagLevResult myresult = this->maglev->call(method,myargs);
-HXLINE(  73)		if (myresult->isError()) {
-HXLINE(  74)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(myresult->getError()->getMessage()));
+HXLINE(  73)		 ::maglev::MagLevResult myresult = this->maglev->call(method,myargs);
+HXLINE(  74)		if (myresult->isError()) {
+HXLINE(  75)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(myresult->getError()->getMessage()));
             		}
             		else {
-HXLINE(  76)			return this->convertToHaxe(myresult->getResult());
+HXLINE(  77)			return this->convertToHaxe(myresult->getResult());
             		}
-HXLINE(  73)		return null();
+HXLINE(  74)		return null();
             	}
 
 
@@ -141,171 +142,174 @@ HX_DEFINE_DYNAMIC_FUNC2(MagLevOld_obj,call,return )
 void MagLevOld_obj::listen(::String event, ::Dynamic callback){
             		HX_BEGIN_LOCAL_FUNC_S3(::hx::LocalFunc,_hx_Closure_0, ::maglev::MagLevOld,_gthis,::String,event, ::Dynamic,callback) HXARGC(1)
             		 ::maglev::MagLevResult _hx_run( ::maglev::MagLevArray args){
-            			HX_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_82_listen)
-HXLINE(  83)			::cpp::VirtualArray arr = ::cpp::VirtualArray_obj::__new();
-HXLINE(  84)			int i = 0;
-HXLINE(  85)			while((i < args->size())){
-HXLINE(  86)				 ::maglev::MagLevOld _gthis1 = _gthis;
-HXDLIN(  86)				arr->push(_gthis1->convertToHaxe(args->get(i)));
+            			HX_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_83_listen)
+HXLINE(  84)			::cpp::VirtualArray arr = ::cpp::VirtualArray_obj::__new();
+HXLINE(  85)			int i = 0;
+HXLINE(  86)			while((i < args->size())){
+HXLINE(  87)				 ::maglev::MagLevOld _gthis1 = _gthis;
+HXDLIN(  87)				arr->push(_gthis1->convertToHaxe(args->get(i)));
+HXLINE(  88)				i = (i + 1);
             			}
-HXLINE(  88)			callback(event,arr);
-HXLINE(  89)			return null();
+HXLINE(  90)			callback(event,arr);
+HXLINE(  91)			return null();
             		}
             		HX_END_LOCAL_FUNC1(return)
 
-            	HX_GC_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_80_listen)
-HXDLIN(  80)		 ::maglev::MagLevOld _gthis = ::hx::ObjectPtr<OBJ_>(this);
-HXLINE(  82)		 ::Dynamic mysub =  ::Dynamic(new _hx_Closure_0(_gthis,event,callback));
-HXLINE(  91)		 ::maglev::MagLevFunction mycallback =  ::maglev::MagLevFunction_obj::__alloc( HX_CTX ,mysub,null());
-HXLINE(  92)		this->maglev->listen(event,mycallback);
+            	HX_GC_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_81_listen)
+HXDLIN(  81)		 ::maglev::MagLevOld _gthis = ::hx::ObjectPtr<OBJ_>(this);
+HXLINE(  83)		 ::Dynamic mysub =  ::Dynamic(new _hx_Closure_0(_gthis,event,callback));
+HXLINE(  93)		 ::maglev::MagLevFunction mycallback =  ::maglev::MagLevFunction_obj::__alloc( HX_CTX ,mysub,null());
+HXLINE(  94)		this->maglev->listen(event,mycallback);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC2(MagLevOld_obj,listen,(void))
 
 void MagLevOld_obj::emit(::String event,::cpp::VirtualArray args){
-            	HX_GC_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_95_emit)
-HXLINE(  96)		 ::maglev::MagLevArray myargs =  ::maglev::MagLevArray_obj::__alloc( HX_CTX );
-HXLINE(  97)		{
-HXLINE(  97)			int _g = 0;
-HXDLIN(  97)			while((_g < args->get_length())){
-HXLINE(  97)				 ::Dynamic arg = args->__get(_g);
-HXDLIN(  97)				_g = (_g + 1);
-HXLINE(  98)				myargs->push(this->convertToMagLev(arg));
+            	HX_GC_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_97_emit)
+HXLINE(  98)		 ::maglev::MagLevArray myargs =  ::maglev::MagLevArray_obj::__alloc( HX_CTX );
+HXLINE(  99)		{
+HXLINE(  99)			int _g = 0;
+HXDLIN(  99)			while((_g < args->get_length())){
+HXLINE(  99)				 ::Dynamic arg = args->__get(_g);
+HXDLIN(  99)				_g = (_g + 1);
+HXLINE( 100)				myargs->push(this->convertToMagLev(arg));
             			}
             		}
-HXLINE( 100)		this->maglev->emit(event,myargs);
+HXLINE( 102)		this->maglev->emit(event,myargs);
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC2(MagLevOld_obj,emit,(void))
 
  ::Dynamic MagLevOld_obj::convertToHaxe( ::maglev::MagLevAny x){
-            	HX_GC_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_104_convertToHaxe)
-HXDLIN( 104)		if (::hx::IsEq( x->getType(),::maglev::MagLevType_obj::MagLevType_Null_dyn() )) {
-HXLINE( 105)			return null();
+            	HX_GC_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_106_convertToHaxe)
+HXDLIN( 106)		if (::hx::IsEq( x->getType(),::maglev::MagLevType_obj::MagLevType_Null_dyn() )) {
+HXLINE( 107)			return null();
             		}
             		else {
-HXLINE( 107)			if (::hx::IsEq( x->getType(),::maglev::MagLevType_obj::MagLevType_Boolean_dyn() )) {
-HXLINE( 108)				 ::maglev::MagLevBoolean y = ::hx::TCast<  ::maglev::MagLevBoolean >::cast(x);
-HXLINE( 109)				return y->getBool();
+HXLINE( 109)			if (::hx::IsEq( x->getType(),::maglev::MagLevType_obj::MagLevType_Boolean_dyn() )) {
+HXLINE( 110)				 ::maglev::MagLevBoolean y = ::hx::TCast<  ::maglev::MagLevBoolean >::cast(x);
+HXLINE( 111)				return y->getBool();
             			}
             			else {
-HXLINE( 111)				if (::hx::IsEq( x->getType(),::maglev::MagLevType_obj::MagLevType_String_dyn() )) {
-HXLINE( 112)					 ::maglev::MagLevString y = ::hx::TCast<  ::maglev::MagLevString >::cast(x);
-HXLINE( 113)					return y->getString();
+HXLINE( 113)				if (::hx::IsEq( x->getType(),::maglev::MagLevType_obj::MagLevType_String_dyn() )) {
+HXLINE( 114)					 ::maglev::MagLevString y = ::hx::TCast<  ::maglev::MagLevString >::cast(x);
+HXLINE( 115)					return y->getString();
             				}
             				else {
-HXLINE( 115)					if (::hx::IsEq( x->getType(),::maglev::MagLevType_obj::MagLevType_Number_dyn() )) {
-HXLINE( 116)						 ::maglev::MagLevNumber y = ::hx::TCast<  ::maglev::MagLevNumber >::cast(x);
-HXLINE( 117)						return y->getFloat();
+HXLINE( 117)					if (::hx::IsEq( x->getType(),::maglev::MagLevType_obj::MagLevType_Number_dyn() )) {
+HXLINE( 118)						 ::maglev::MagLevNumber y = ::hx::TCast<  ::maglev::MagLevNumber >::cast(x);
+HXLINE( 119)						return y->getFloat();
             					}
             					else {
-HXLINE( 119)						if (::hx::IsEq( x->getType(),::maglev::MagLevType_obj::MagLevType_Array_dyn() )) {
-HXLINE( 120)							 ::maglev::MagLevArray y = ::hx::TCast<  ::maglev::MagLevArray >::cast(x);
-HXLINE( 121)							::cpp::VirtualArray arr = ::cpp::VirtualArray_obj::__new();
-HXLINE( 122)							int i = 0;
-HXLINE( 123)							while((i < y->size())){
-HXLINE( 124)								arr->push(y->get(i));
+HXLINE( 121)						if (::hx::IsEq( x->getType(),::maglev::MagLevType_obj::MagLevType_Array_dyn() )) {
+HXLINE( 122)							 ::maglev::MagLevArray y = ::hx::TCast<  ::maglev::MagLevArray >::cast(x);
+HXLINE( 123)							::cpp::VirtualArray arr = ::cpp::VirtualArray_obj::__new();
+HXLINE( 124)							int i = 0;
+HXLINE( 125)							while((i < y->size())){
+HXLINE( 126)								arr->push(y->get(i));
+HXLINE( 127)								i = (i + 1);
             							}
-HXLINE( 126)							return arr;
+HXLINE( 129)							return arr;
             						}
             						else {
-HXLINE( 128)							if (::hx::IsEq( x->getType(),::maglev::MagLevType_obj::MagLevType_Object_dyn() )) {
-HXLINE( 129)								 ::maglev::MagLevObject y = ::hx::TCast<  ::maglev::MagLevObject >::cast(x);
-HXLINE( 130)								 ::haxe::ds::StringMap map =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
-HXLINE( 131)								 ::maglev::MagLevArray keys = y->keys();
-HXLINE( 132)								int i = 0;
-HXLINE( 133)								while((i < keys->size())){
-HXLINE( 134)									::String key = ::hx::TCast<  ::maglev::MagLevString >::cast(keys->get(i))->getString();
-HXLINE( 135)									map->set(key,y->get(key));
+HXLINE( 131)							if (::hx::IsEq( x->getType(),::maglev::MagLevType_obj::MagLevType_Object_dyn() )) {
+HXLINE( 132)								 ::maglev::MagLevObject y = ::hx::TCast<  ::maglev::MagLevObject >::cast(x);
+HXLINE( 133)								 ::haxe::ds::StringMap map =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+HXLINE( 134)								 ::maglev::MagLevArray keys = y->keys();
+HXLINE( 135)								int i = 0;
+HXLINE( 136)								while((i < keys->size())){
+HXLINE( 137)									::String key = ::hx::TCast<  ::maglev::MagLevString >::cast(keys->get(i))->getString();
+HXLINE( 138)									map->set(key,y->get(key));
+HXLINE( 139)									i = (i + 1);
             								}
-HXLINE( 137)								return map;
+HXLINE( 141)								return map;
             							}
             							else {
-HXLINE( 140)								HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("convertToHaxe: unknown type",4a,83,07,f2)));
+HXLINE( 144)								HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("convertToHaxe: unknown type",4a,83,07,f2)));
             							}
             						}
             					}
             				}
             			}
             		}
-HXLINE( 104)		return null();
+HXLINE( 106)		return null();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(MagLevOld_obj,convertToHaxe,return )
 
  ::maglev::MagLevAny MagLevOld_obj::convertToMagLev( ::Dynamic x){
-            	HX_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_145_convertToMagLev)
-HXDLIN( 145)		if (::hx::IsNull( x )) {
-HXLINE( 146)			return ::maglev::MagLevNull_obj::create();
+            	HX_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_149_convertToMagLev)
+HXDLIN( 149)		if (::hx::IsNull( x )) {
+HXLINE( 150)			return ::maglev::MagLevNull_obj::create();
             		}
             		else {
-HXLINE( 148)			if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< bool >()) ))) {
-HXLINE( 149)				return ::maglev::MagLevBoolean_obj::fromBool(::hx::TCast< bool >::cast(x));
+HXLINE( 152)			if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< bool >()) ))) {
+HXLINE( 153)				return ::maglev::MagLevBoolean_obj::fromBool(::hx::TCast< bool >::cast(x));
             			}
             			else {
-HXLINE( 151)				if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
-HXLINE( 152)					return ::maglev::MagLevString_obj::fromString(::hx::TCast< ::String >::cast(x));
+HXLINE( 155)				if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< ::String >()) ))) {
+HXLINE( 156)					return ::maglev::MagLevString_obj::fromString(::hx::TCast< ::String >::cast(x));
             				}
             				else {
-HXLINE( 154)					if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< int >()) ))) {
-HXLINE( 155)						return ::maglev::MagLevNumber_obj::fromInt(::hx::TCast< int >::cast(x));
+HXLINE( 158)					if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< int >()) ))) {
+HXLINE( 159)						return ::maglev::MagLevNumber_obj::fromInt(::hx::TCast< int >::cast(x));
             					}
             					else {
-HXLINE( 157)						if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< ::Float >()) ))) {
-HXLINE( 158)							return ::maglev::MagLevNumber_obj::fromFloat(( (Float)(x) ));
+HXLINE( 161)						if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< ::Float >()) ))) {
+HXLINE( 162)							return ::maglev::MagLevNumber_obj::fromFloat(( (Float)(x) ));
             						}
             						else {
-HXLINE( 160)							if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ArrayBase::__mClass) ))) {
-HXLINE( 161)								 ::maglev::MagLevArray arr = ::maglev::MagLevArray_obj::create();
-HXLINE( 162)								::cpp::VirtualArray y = ( (::cpp::VirtualArray)(x) );
-HXLINE( 163)								{
-HXLINE( 163)									int _g = 0;
-HXDLIN( 163)									while((_g < y->get_length())){
-HXLINE( 163)										 ::Dynamic item = y->__get(_g);
-HXDLIN( 163)										_g = (_g + 1);
-HXLINE( 164)										arr->push(this->convertToMagLev(item));
+HXLINE( 164)							if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ArrayBase::__mClass) ))) {
+HXLINE( 165)								 ::maglev::MagLevArray arr = ::maglev::MagLevArray_obj::create();
+HXLINE( 166)								::cpp::VirtualArray y = ( (::cpp::VirtualArray)(x) );
+HXLINE( 167)								{
+HXLINE( 167)									int _g = 0;
+HXDLIN( 167)									while((_g < y->get_length())){
+HXLINE( 167)										 ::Dynamic item = y->__get(_g);
+HXDLIN( 167)										_g = (_g + 1);
+HXLINE( 168)										arr->push(this->convertToMagLev(item));
             									}
             								}
-HXLINE( 166)								return arr;
+HXLINE( 170)								return arr;
             							}
             							else {
-HXLINE( 168)								if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< ::haxe::ds::StringMap >()) ))) {
-HXLINE( 169)									 ::haxe::ds::StringMap map = ( ( ::haxe::ds::StringMap)(x) );
-HXLINE( 170)									 ::maglev::MagLevObject obj = ::maglev::MagLevObject_obj::create();
-HXLINE( 171)									{
-HXLINE( 171)										 ::Dynamic key = map->keys();
-HXDLIN( 171)										while(( (bool)(key->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
-HXLINE( 171)											::String key1 = ( (::String)(key->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)()) );
-HXLINE( 172)											obj->set(key1,this->convertToMagLev(map->get(key1)));
+HXLINE( 172)								if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< ::haxe::ds::StringMap >()) ))) {
+HXLINE( 173)									 ::haxe::ds::StringMap map = ( ( ::haxe::ds::StringMap)(x) );
+HXLINE( 174)									 ::maglev::MagLevObject obj = ::maglev::MagLevObject_obj::create();
+HXLINE( 175)									{
+HXLINE( 175)										 ::Dynamic key = map->keys();
+HXDLIN( 175)										while(( (bool)(key->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
+HXLINE( 175)											::String key1 = ( (::String)(key->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)()) );
+HXLINE( 176)											obj->set(key1,this->convertToMagLev(map->get(key1)));
             										}
             									}
-HXLINE( 174)									return obj;
+HXLINE( 178)									return obj;
             								}
             								else {
-HXLINE( 176)									if (::Reflect_obj::isObject(x)) {
-HXLINE( 177)										 ::maglev::MagLevObject obj = ::maglev::MagLevObject_obj::create();
-HXLINE( 178)										{
-HXLINE( 178)											int _g = 0;
-HXDLIN( 178)											::Array< ::String > _g1 = ::Reflect_obj::fields(x);
-HXDLIN( 178)											while((_g < _g1->length)){
-HXLINE( 178)												::String field = _g1->__get(_g);
-HXDLIN( 178)												_g = (_g + 1);
-HXLINE( 179)												 ::Dynamic val = ::Reflect_obj::getProperty(x,field);
-HXLINE( 180)												obj->set(field,this->convertToMagLev(val));
+HXLINE( 180)									if (::Reflect_obj::isObject(x)) {
+HXLINE( 181)										 ::maglev::MagLevObject obj = ::maglev::MagLevObject_obj::create();
+HXLINE( 182)										{
+HXLINE( 182)											int _g = 0;
+HXDLIN( 182)											::Array< ::String > _g1 = ::Reflect_obj::fields(x);
+HXDLIN( 182)											while((_g < _g1->length)){
+HXLINE( 182)												::String field = _g1->__get(_g);
+HXDLIN( 182)												_g = (_g + 1);
+HXLINE( 183)												 ::Dynamic val = ::Reflect_obj::getProperty(x,field);
+HXLINE( 184)												obj->set(field,this->convertToMagLev(val));
             											}
             										}
-HXLINE( 182)										return obj;
+HXLINE( 186)										return obj;
             									}
             									else {
-HXLINE( 184)										if (::Reflect_obj::isFunction(x)) {
-HXLINE( 185)											 ::Dynamic f = x;
-HXLINE( 186)											return ::maglev::MagLevFunction_obj::fromFunction(f);
+HXLINE( 188)										if (::Reflect_obj::isFunction(x)) {
+HXLINE( 189)											 ::Dynamic f = x;
+HXLINE( 190)											return ::maglev::MagLevFunction_obj::fromFunction(f);
             										}
             										else {
-HXLINE( 189)											HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("convertToMagLev: unknown type",ae,84,a9,64)));
+HXLINE( 193)											HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("convertToMagLev: unknown type",ae,84,a9,64)));
             										}
             									}
             								}
@@ -315,7 +319,7 @@ HXLINE( 189)											HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("conv
             				}
             			}
             		}
-HXLINE( 145)		return null();
+HXLINE( 149)		return null();
             	}
 
 
