@@ -208,7 +208,7 @@ HXLINE( 122)							 ::maglev::MagLevArray y = ::hx::TCast<  ::maglev::MagLevArra
 HXLINE( 123)							::cpp::VirtualArray arr = ::cpp::VirtualArray_obj::__new();
 HXLINE( 124)							int i = 0;
 HXLINE( 125)							while((i < y->size())){
-HXLINE( 126)								arr->push(y->get(i));
+HXLINE( 126)								arr->push(this->convertToHaxe(y->get(i)));
 HXLINE( 127)								i = (i + 1);
             							}
 HXLINE( 129)							return arr;
@@ -221,7 +221,7 @@ HXLINE( 134)								 ::maglev::MagLevArray keys = y->keys();
 HXLINE( 135)								int i = 0;
 HXLINE( 136)								while((i < keys->size())){
 HXLINE( 137)									::String key = ::hx::TCast<  ::maglev::MagLevString >::cast(keys->get(i))->getString();
-HXLINE( 138)									map->set(key,y->get(key));
+HXLINE( 138)									map->set(key,this->convertToHaxe(y->get(key)));
 HXLINE( 139)									i = (i + 1);
             								}
 HXLINE( 141)								return map;
