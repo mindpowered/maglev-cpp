@@ -180,7 +180,6 @@ const char *__hxcpp_all_classes[] = {
 "maglev.CppAny",
 "maglev.CppCallbackPtr",
 "maglev.MagLev",
-"maglev._MagLev.MagLevType_Impl_",
 "maglev.MagLevResult",
 "maglev.MagLevError",
 "maglev.MagLevAny",

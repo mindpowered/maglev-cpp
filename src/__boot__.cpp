@@ -13,9 +13,6 @@
 #ifndef INCLUDED_ValueType
 #include <ValueType.h>
 #endif
-#ifndef INCLUDED_maglev__MagLev_MagLevType_Impl_
-#include <maglev/_MagLev/MagLevType_Impl_.h>
-#endif
 #ifndef INCLUDED_maglev_MagLev
 #include <maglev/MagLev.h>
 #endif
@@ -246,7 +243,6 @@ __files__boot();
 ::haxe::ds::Either_obj::__register();
 ::haxe::StackItem_obj::__register();
 ::ValueType_obj::__register();
-::maglev::_MagLev::MagLevType_Impl__obj::__register();
 ::maglev::MagLev_obj::__register();
 ::haxe::xml::Parser_obj::__register();
 ::haxe::Log_obj::__register();
@@ -332,6 +328,5 @@ __files__boot();
 ::Xml_obj::__boot();
 ::haxe::xml::Parser_obj::__boot();
 ::maglev::MagLev_obj::__boot();
-::maglev::_MagLev::MagLevType_Impl__obj::__boot();
 }
 

@@ -10,16 +10,14 @@
 #ifndef INCLUDED_maglev_MagLevString
 #include <maglev/MagLevString.h>
 #endif
-#ifndef INCLUDED_maglev__MagLev_MagLevType_Impl_
-#include <maglev/_MagLev/MagLevType_Impl_.h>
-#endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_9cce07e260f1bc30_529_new,"maglev.MagLevBoolean","new",0xa41b464c,"maglev.MagLevBoolean.new","maglev/MagLev.hx",529,0x5b19476f)
 HX_LOCAL_STACK_FRAME(_hx_pos_9cce07e260f1bc30_534_getBool,"maglev.MagLevBoolean","getBool",0x6b550fcc,"maglev.MagLevBoolean.getBool","maglev/MagLev.hx",534,0x5b19476f)
 HX_LOCAL_STACK_FRAME(_hx_pos_9cce07e260f1bc30_537_getType,"maglev.MagLevBoolean","getType",0x77427e5c,"maglev.MagLevBoolean.getType","maglev/MagLev.hx",537,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_9cce07e260f1bc30_540_isEqual,"maglev.MagLevBoolean","isEqual",0x66bf4f56,"maglev.MagLevBoolean.isEqual","maglev/MagLev.hx",540,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_9cce07e260f1bc30_549_toJson,"maglev.MagLevBoolean","toJson",0x20afb2d7,"maglev.MagLevBoolean.toJson","maglev/MagLev.hx",549,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_9cce07e260f1bc30_543_isEqual,"maglev.MagLevBoolean","isEqual",0x66bf4f56,"maglev.MagLevBoolean.isEqual","maglev/MagLev.hx",543,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_9cce07e260f1bc30_552_toJson,"maglev.MagLevBoolean","toJson",0x20afb2d7,"maglev.MagLevBoolean.toJson","maglev/MagLev.hx",552,0x5b19476f)
 HX_LOCAL_STACK_FRAME(_hx_pos_9cce07e260f1bc30_527_fromBool,"maglev.MagLevBoolean","fromBool",0x0730e548,"maglev.MagLevBoolean.fromBool","maglev/MagLev.hx",527,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_9cce07e260f1bc30_540_getStaticType,"maglev.MagLevBoolean","getStaticType",0x41bddbaa,"maglev.MagLevBoolean.getStaticType","maglev/MagLev.hx",540,0x5b19476f)
 namespace maglev{
 
 void MagLevBoolean_obj::__construct(bool value){
@@ -57,34 +55,34 @@ HX_DEFINE_DYNAMIC_FUNC0(MagLevBoolean_obj,getBool,return )
 
 int MagLevBoolean_obj::getType(){
             	HX_STACKFRAME(&_hx_pos_9cce07e260f1bc30_537_getType)
-HXDLIN( 537)		return ::maglev::_MagLev::MagLevType_Impl__obj::MagLevType_Boolean;
+HXDLIN( 537)		return 2;
             	}
 
 
 bool MagLevBoolean_obj::isEqual( ::maglev::MagLevAny other){
-            	HX_STACKFRAME(&_hx_pos_9cce07e260f1bc30_540_isEqual)
-HXDLIN( 540)		int _hx_tmp = other->getType();
-HXDLIN( 540)		if ((_hx_tmp == this->getType())) {
-HXLINE( 541)			 ::maglev::MagLevBoolean o = ::hx::TCast<  ::maglev::MagLevBoolean >::cast(other);
-HXLINE( 542)			bool _hx_tmp = this->getBool();
-HXDLIN( 542)			return (_hx_tmp == o->getBool());
+            	HX_STACKFRAME(&_hx_pos_9cce07e260f1bc30_543_isEqual)
+HXDLIN( 543)		int _hx_tmp = other->getType();
+HXDLIN( 543)		if ((_hx_tmp == this->getType())) {
+HXLINE( 544)			 ::maglev::MagLevBoolean o = ::hx::TCast<  ::maglev::MagLevBoolean >::cast(other);
+HXLINE( 545)			bool _hx_tmp = this->getBool();
+HXDLIN( 545)			return (_hx_tmp == o->getBool());
             		}
             		else {
-HXLINE( 545)			return false;
+HXLINE( 548)			return false;
             		}
-HXLINE( 540)		return false;
+HXLINE( 543)		return false;
             	}
 
 
  ::maglev::MagLevString MagLevBoolean_obj::toJson(){
-            	HX_GC_STACKFRAME(&_hx_pos_9cce07e260f1bc30_549_toJson)
-HXDLIN( 549)		if (this->value) {
-HXLINE( 550)			return  ::maglev::MagLevString_obj::__alloc( HX_CTX ,HX_("true",4e,a7,03,4d));
+            	HX_GC_STACKFRAME(&_hx_pos_9cce07e260f1bc30_552_toJson)
+HXDLIN( 552)		if (this->value) {
+HXLINE( 553)			return  ::maglev::MagLevString_obj::__alloc( HX_CTX ,HX_("true",4e,a7,03,4d));
             		}
             		else {
-HXLINE( 552)			return  ::maglev::MagLevString_obj::__alloc( HX_CTX ,HX_("false",a3,35,4f,fb));
+HXLINE( 555)			return  ::maglev::MagLevString_obj::__alloc( HX_CTX ,HX_("false",a3,35,4f,fb));
             		}
-HXLINE( 549)		return null();
+HXLINE( 552)		return null();
             	}
 
 
@@ -95,6 +93,14 @@ HXDLIN( 527)		return  ::maglev::MagLevBoolean_obj::__alloc( HX_CTX ,value);
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC1(MagLevBoolean_obj,fromBool,return )
+
+int MagLevBoolean_obj::getStaticType(){
+            	HX_STACKFRAME(&_hx_pos_9cce07e260f1bc30_540_getStaticType)
+HXDLIN( 540)		return 2;
+            	}
+
+
+STATIC_HX_DEFINE_DYNAMIC_FUNC0(MagLevBoolean_obj,getStaticType,return )
 
 
 ::hx::ObjectPtr< MagLevBoolean_obj > MagLevBoolean_obj::__new(bool value) {
@@ -136,6 +142,9 @@ bool MagLevBoolean_obj::__GetStatic(const ::String &inName, Dynamic &outValue, :
 	switch(inName.length) {
 	case 8:
 		if (HX_FIELD_EQ(inName,"fromBool") ) { outValue = fromBool_dyn(); return true; }
+		break;
+	case 13:
+		if (HX_FIELD_EQ(inName,"getStaticType") ) { outValue = getStaticType_dyn(); return true; }
 	}
 	return false;
 }
@@ -175,6 +184,7 @@ static ::String MagLevBoolean_obj_sMemberFields[] = {
 
 static ::String MagLevBoolean_obj_sStaticFields[] = {
 	HX_("fromBool",b4,52,e7,9e),
+	HX_("getStaticType",be,46,27,0b),
 	::String(null())
 };
 

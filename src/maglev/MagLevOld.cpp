@@ -52,9 +52,6 @@
 #ifndef INCLUDED_maglev_MagLevString
 #include <maglev/MagLevString.h>
 #endif
-#ifndef INCLUDED_maglev__MagLev_MagLevType_Impl_
-#include <maglev/_MagLev/MagLevType_Impl_.h>
-#endif
 
 HX_DEFINE_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_45_new,"maglev.MagLevOld","new",0x85ff9ecb,"maglev.MagLevOld.new","maglev/MagLevOld.hx",45,0x84580086)
 HX_LOCAL_STACK_FRAME(_hx_pos_1d53d4c2e241c78b_54_register,"maglev.MagLevOld","register",0x2b98b418,"maglev.MagLevOld.register","maglev/MagLevOld.hx",54,0x84580086)
@@ -185,30 +182,30 @@ HX_DEFINE_DYNAMIC_FUNC2(MagLevOld_obj,emit,(void))
  ::Dynamic MagLevOld_obj::convertToHaxe( ::maglev::MagLevAny x){
             	HX_GC_STACKFRAME(&_hx_pos_1d53d4c2e241c78b_106_convertToHaxe)
 HXDLIN( 106)		int _hx_tmp = x->getType();
-HXDLIN( 106)		if ((_hx_tmp == ::maglev::_MagLev::MagLevType_Impl__obj::MagLevType_Null)) {
+HXDLIN( 106)		if ((_hx_tmp == ::maglev::MagLevNull_obj::getStaticType())) {
 HXLINE( 107)			return null();
             		}
             		else {
 HXLINE( 109)			int _hx_tmp = x->getType();
-HXDLIN( 109)			if ((_hx_tmp == ::maglev::_MagLev::MagLevType_Impl__obj::MagLevType_Boolean)) {
+HXDLIN( 109)			if ((_hx_tmp == ::maglev::MagLevBoolean_obj::getStaticType())) {
 HXLINE( 110)				 ::maglev::MagLevBoolean y = ::hx::TCast<  ::maglev::MagLevBoolean >::cast(x);
 HXLINE( 111)				return y->getBool();
             			}
             			else {
 HXLINE( 113)				int _hx_tmp = x->getType();
-HXDLIN( 113)				if ((_hx_tmp == ::maglev::_MagLev::MagLevType_Impl__obj::MagLevType_String)) {
+HXDLIN( 113)				if ((_hx_tmp == ::maglev::MagLevString_obj::getStaticType())) {
 HXLINE( 114)					 ::maglev::MagLevString y = ::hx::TCast<  ::maglev::MagLevString >::cast(x);
 HXLINE( 115)					return y->getString();
             				}
             				else {
 HXLINE( 117)					int _hx_tmp = x->getType();
-HXDLIN( 117)					if ((_hx_tmp == ::maglev::_MagLev::MagLevType_Impl__obj::MagLevType_Number)) {
+HXDLIN( 117)					if ((_hx_tmp == ::maglev::MagLevNumber_obj::getStaticType())) {
 HXLINE( 118)						 ::maglev::MagLevNumber y = ::hx::TCast<  ::maglev::MagLevNumber >::cast(x);
 HXLINE( 119)						return y->getFloat();
             					}
             					else {
 HXLINE( 121)						int _hx_tmp = x->getType();
-HXDLIN( 121)						if ((_hx_tmp == ::maglev::_MagLev::MagLevType_Impl__obj::MagLevType_Array)) {
+HXDLIN( 121)						if ((_hx_tmp == ::maglev::MagLevArray_obj::getStaticType())) {
 HXLINE( 122)							 ::maglev::MagLevArray y = ::hx::TCast<  ::maglev::MagLevArray >::cast(x);
 HXLINE( 123)							::cpp::VirtualArray arr = ::cpp::VirtualArray_obj::__new();
 HXLINE( 124)							int i = 0;
@@ -220,7 +217,7 @@ HXLINE( 129)							return arr;
             						}
             						else {
 HXLINE( 131)							int _hx_tmp = x->getType();
-HXDLIN( 131)							if ((_hx_tmp == ::maglev::_MagLev::MagLevType_Impl__obj::MagLevType_Object)) {
+HXDLIN( 131)							if ((_hx_tmp == ::maglev::MagLevObject_obj::getStaticType())) {
 HXLINE( 132)								 ::maglev::MagLevObject y = ::hx::TCast<  ::maglev::MagLevObject >::cast(x);
 HXLINE( 133)								 ::haxe::ds::StringMap map =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
 HXLINE( 134)								 ::maglev::MagLevArray keys = y->keys();
