@@ -184,6 +184,7 @@ const char *__hxcpp_all_classes[] = {
 "maglev.MagLev",
 "maglev.MagLevCpp",
 "maglev.MagLevOld",
+"maglev._MagLevTypes.MagLevType_Impl_",
 "maglev.MagLevResult",
 "maglev.MagLevError",
 "maglev.MagLevAny",
