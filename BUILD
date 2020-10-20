@@ -21,7 +21,7 @@ cc_library(
     'include/maglev/MagLevObject.h',
     'include/maglev/MagLevResult.h',
     'include/maglev/MagLevString.h',
-    'include/maglev/MagLevType.h',
+    'include/maglev/_MagLev/MagLevType_Impl_.h',
   ],
   linkstatic = 1,
   alwayslink = 1,
