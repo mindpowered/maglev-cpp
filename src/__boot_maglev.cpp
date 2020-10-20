@@ -13,8 +13,8 @@
 #ifndef INCLUDED_ValueType
 #include <ValueType.h>
 #endif
-#ifndef INCLUDED_maglev__MagLevTypes_MagLevType_Impl_
-#include <maglev/_MagLevTypes/MagLevType_Impl_.h>
+#ifndef INCLUDED_maglev__MagLev_MagLevType_Impl_
+#include <maglev/_MagLev/MagLevType_Impl_.h>
 #endif
 #ifndef INCLUDED_maglev_MagLev
 #include <maglev/MagLev.h>
@@ -39,6 +39,12 @@
 #endif
 #ifndef INCLUDED_EReg
 #include <EReg.h>
+#endif
+#ifndef INCLUDED_maglev_MagLevOld
+#include <maglev/MagLevOld.h>
+#endif
+#ifndef INCLUDED_maglev_MagLevCpp
+#include <maglev/MagLevCpp.h>
 #endif
 #ifndef INCLUDED_maglev_MagLevNull
 #include <maglev/MagLevNull.h>
@@ -69,12 +75,6 @@
 #endif
 #ifndef INCLUDED_maglev_MagLevResult
 #include <maglev/MagLevResult.h>
-#endif
-#ifndef INCLUDED_maglev_MagLevOld
-#include <maglev/MagLevOld.h>
-#endif
-#ifndef INCLUDED_maglev_MagLevCpp
-#include <maglev/MagLevCpp.h>
 #endif
 #ifndef INCLUDED_maglev_CppCallbackPtr
 #include <maglev/CppCallbackPtr.h>
@@ -243,7 +243,7 @@ void __boot_maglev()
 ::haxe::ds::Either_obj::__register();
 ::haxe::StackItem_obj::__register();
 ::ValueType_obj::__register();
-::maglev::_MagLevTypes::MagLevType_Impl__obj::__register();
+::maglev::_MagLev::MagLevType_Impl__obj::__register();
 ::maglev::MagLev_obj::__register();
 ::haxe::xml::Parser_obj::__register();
 ::haxe::Log_obj::__register();
@@ -252,6 +252,8 @@ void __boot_maglev()
 ::StringTools_obj::__register();
 ::haxe::SysTools_obj::__register();
 ::EReg_obj::__register();
+::maglev::MagLevOld_obj::__register();
+::maglev::MagLevCpp_obj::__register();
 ::maglev::MagLevNull_obj::__register();
 ::maglev::MagLevBoolean_obj::__register();
 ::maglev::MagLevString_obj::__register();
@@ -262,8 +264,6 @@ void __boot_maglev()
 ::maglev::MagLevAny_obj::__register();
 ::maglev::MagLevError_obj::__register();
 ::maglev::MagLevResult_obj::__register();
-::maglev::MagLevOld_obj::__register();
-::maglev::MagLevCpp_obj::__register();
 ::maglev::CppCallbackPtr_obj::__register();
 ::maglev::CppAny_obj::__register();
 ::haxe::xml::Printer_obj::__register();
@@ -329,6 +329,6 @@ void __boot_maglev()
 ::Xml_obj::__boot();
 ::haxe::xml::Parser_obj::__boot();
 ::maglev::MagLev_obj::__boot();
-::maglev::_MagLevTypes::MagLevType_Impl__obj::__boot();
+::maglev::_MagLev::MagLevType_Impl__obj::__boot();
 }
 
