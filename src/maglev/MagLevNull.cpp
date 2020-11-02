@@ -11,18 +11,18 @@
 #include <maglev/MagLevString.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_25586abe6b76e172_567_new,"maglev.MagLevNull","new",0xb2260507,"maglev.MagLevNull.new","maglev/MagLev.hx",567,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_25586abe6b76e172_570_getType,"maglev.MagLevNull","getType",0x2072b697,"maglev.MagLevNull.getType","maglev/MagLev.hx",570,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_25586abe6b76e172_576_isEqual,"maglev.MagLevNull","isEqual",0x0fef8791,"maglev.MagLevNull.isEqual","maglev/MagLev.hx",576,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_25586abe6b76e172_584_toJson,"maglev.MagLevNull","toJson",0x070a9afc,"maglev.MagLevNull.toJson","maglev/MagLev.hx",584,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_25586abe6b76e172_564_create,"maglev.MagLevNull","create",0x06f854b5,"maglev.MagLevNull.create","maglev/MagLev.hx",564,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_25586abe6b76e172_573_getStaticType,"maglev.MagLevNull","getStaticType",0x365a7225,"maglev.MagLevNull.getStaticType","maglev/MagLev.hx",573,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_25586abe6b76e172_587_wrap,"maglev.MagLevNull","wrap",0x351b1743,"maglev.MagLevNull.wrap","maglev/MagLev.hx",587,0x5b19476f)
+HX_DEFINE_STACK_FRAME(_hx_pos_25586abe6b76e172_617_new,"maglev.MagLevNull","new",0xb2260507,"maglev.MagLevNull.new","maglev/MagLev.hx",617,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_25586abe6b76e172_620_getType,"maglev.MagLevNull","getType",0x2072b697,"maglev.MagLevNull.getType","maglev/MagLev.hx",620,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_25586abe6b76e172_626_isEqual,"maglev.MagLevNull","isEqual",0x0fef8791,"maglev.MagLevNull.isEqual","maglev/MagLev.hx",626,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_25586abe6b76e172_634_toJson,"maglev.MagLevNull","toJson",0x070a9afc,"maglev.MagLevNull.toJson","maglev/MagLev.hx",634,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_25586abe6b76e172_614_create,"maglev.MagLevNull","create",0x06f854b5,"maglev.MagLevNull.create","maglev/MagLev.hx",614,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_25586abe6b76e172_623_getStaticType,"maglev.MagLevNull","getStaticType",0x365a7225,"maglev.MagLevNull.getStaticType","maglev/MagLev.hx",623,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_25586abe6b76e172_637_wrap,"maglev.MagLevNull","wrap",0x351b1743,"maglev.MagLevNull.wrap","maglev/MagLev.hx",637,0x5b19476f)
 namespace maglev{
 
 void MagLevNull_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_25586abe6b76e172_567_new)
-HXDLIN( 567)		super::__construct();
+            	HX_STACKFRAME(&_hx_pos_25586abe6b76e172_617_new)
+HXDLIN( 617)		super::__construct();
             	}
 
 Dynamic MagLevNull_obj::__CreateEmpty() { return new MagLevNull_obj; }
@@ -45,55 +45,55 @@ bool MagLevNull_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 int MagLevNull_obj::getType(){
-            	HX_STACKFRAME(&_hx_pos_25586abe6b76e172_570_getType)
-HXDLIN( 570)		return 1;
+            	HX_STACKFRAME(&_hx_pos_25586abe6b76e172_620_getType)
+HXDLIN( 620)		return 1;
             	}
 
 
 bool MagLevNull_obj::isEqual( ::maglev::MagLevAny other){
-            	HX_STACKFRAME(&_hx_pos_25586abe6b76e172_576_isEqual)
-HXDLIN( 576)		int _hx_tmp = other->getType();
-HXDLIN( 576)		if ((_hx_tmp == this->getType())) {
-HXLINE( 577)			return true;
+            	HX_STACKFRAME(&_hx_pos_25586abe6b76e172_626_isEqual)
+HXDLIN( 626)		int _hx_tmp = other->getType();
+HXDLIN( 626)		if ((_hx_tmp == this->getType())) {
+HXLINE( 627)			return true;
             		}
             		else {
-HXLINE( 580)			return false;
+HXLINE( 630)			return false;
             		}
-HXLINE( 576)		return false;
+HXLINE( 626)		return false;
             	}
 
 
  ::maglev::MagLevString MagLevNull_obj::toJson(){
-            	HX_GC_STACKFRAME(&_hx_pos_25586abe6b76e172_584_toJson)
-HXDLIN( 584)		return  ::maglev::MagLevString_obj::__alloc( HX_CTX ,HX_("null",87,9e,0e,49));
+            	HX_GC_STACKFRAME(&_hx_pos_25586abe6b76e172_634_toJson)
+HXDLIN( 634)		return  ::maglev::MagLevString_obj::__alloc( HX_CTX ,HX_("null",87,9e,0e,49));
             	}
 
 
  ::maglev::MagLevNull MagLevNull_obj::create(){
-            	HX_GC_STACKFRAME(&_hx_pos_25586abe6b76e172_564_create)
-HXDLIN( 564)		return  ::maglev::MagLevNull_obj::__alloc( HX_CTX );
+            	HX_GC_STACKFRAME(&_hx_pos_25586abe6b76e172_614_create)
+HXDLIN( 614)		return  ::maglev::MagLevNull_obj::__alloc( HX_CTX );
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(MagLevNull_obj,create,return )
 
 int MagLevNull_obj::getStaticType(){
-            	HX_STACKFRAME(&_hx_pos_25586abe6b76e172_573_getStaticType)
-HXDLIN( 573)		return 1;
+            	HX_STACKFRAME(&_hx_pos_25586abe6b76e172_623_getStaticType)
+HXDLIN( 623)		return 1;
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC0(MagLevNull_obj,getStaticType,return )
 
  ::maglev::MagLevAny MagLevNull_obj::wrap( ::maglev::MagLevAny o){
-            	HX_GC_STACKFRAME(&_hx_pos_25586abe6b76e172_587_wrap)
-HXDLIN( 587)		if (::hx::IsNull( o )) {
-HXLINE( 588)			return  ::maglev::MagLevNull_obj::__alloc( HX_CTX );
+            	HX_GC_STACKFRAME(&_hx_pos_25586abe6b76e172_637_wrap)
+HXDLIN( 637)		if (::hx::IsNull( o )) {
+HXLINE( 638)			return  ::maglev::MagLevNull_obj::__alloc( HX_CTX );
             		}
             		else {
-HXLINE( 590)			return o;
+HXLINE( 640)			return o;
             		}
-HXLINE( 587)		return null();
+HXLINE( 637)		return null();
             	}
 
 

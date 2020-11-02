@@ -82,6 +82,7 @@
    <depend name="include/maglev/MagLevString.h" />
   </file>
   <file name="src/maglev/MagLevResult.cpp">
+   <depend name="include/haxe/Exception.h" />
    <depend name="include/maglev/MagLevAny.h" />
    <depend name="include/maglev/MagLevError.h" />
    <depend name="include/maglev/MagLevNull.h" />
