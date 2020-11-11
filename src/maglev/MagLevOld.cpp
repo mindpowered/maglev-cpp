@@ -265,51 +265,51 @@ HXLINE( 161)						if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< ::Floa
 HXLINE( 162)							return ::maglev::MagLevNumber_obj::fromFloat(( (Float)(x) ));
             						}
             						else {
-HXLINE( 164)							if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ArrayBase::__mClass) ))) {
-HXLINE( 165)								 ::maglev::MagLevArray arr = ::maglev::MagLevArray_obj::create();
-HXLINE( 166)								::cpp::VirtualArray y = ( (::cpp::VirtualArray)(x) );
-HXLINE( 167)								{
-HXLINE( 167)									int _g = 0;
-HXDLIN( 167)									while((_g < y->get_length())){
-HXLINE( 167)										 ::Dynamic item = y->__get(_g);
-HXDLIN( 167)										_g = (_g + 1);
-HXLINE( 168)										arr->push(this->convertToMagLev(item));
-            									}
-            								}
-HXLINE( 170)								return arr;
+HXLINE( 164)							if (::Reflect_obj::isFunction(x)) {
+HXLINE( 165)								 ::Dynamic f = x;
+HXLINE( 166)								return ::maglev::MagLevFunction_obj::fromFunction(f);
             							}
             							else {
-HXLINE( 172)								if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< ::haxe::ds::StringMap >()) ))) {
-HXLINE( 173)									 ::haxe::ds::StringMap map = ( ( ::haxe::ds::StringMap)(x) );
-HXLINE( 174)									 ::maglev::MagLevObject obj = ::maglev::MagLevObject_obj::create();
-HXLINE( 175)									{
-HXLINE( 175)										 ::Dynamic key = map->keys();
-HXDLIN( 175)										while(( (bool)(key->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
-HXLINE( 175)											::String key1 = ( (::String)(key->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)()) );
-HXLINE( 176)											obj->set(key1,this->convertToMagLev(map->get(key1)));
+HXLINE( 168)								if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ArrayBase::__mClass) ))) {
+HXLINE( 169)									 ::maglev::MagLevArray arr = ::maglev::MagLevArray_obj::create();
+HXLINE( 170)									::cpp::VirtualArray y = ( (::cpp::VirtualArray)(x) );
+HXLINE( 171)									{
+HXLINE( 171)										int _g = 0;
+HXDLIN( 171)										while((_g < y->get_length())){
+HXLINE( 171)											 ::Dynamic item = y->__get(_g);
+HXDLIN( 171)											_g = (_g + 1);
+HXLINE( 172)											arr->push(this->convertToMagLev(item));
             										}
             									}
-HXLINE( 178)									return obj;
+HXLINE( 174)									return arr;
             								}
             								else {
-HXLINE( 180)									if (::Reflect_obj::isObject(x)) {
-HXLINE( 181)										 ::maglev::MagLevObject obj = ::maglev::MagLevObject_obj::create();
-HXLINE( 182)										{
-HXLINE( 182)											int _g = 0;
-HXDLIN( 182)											::Array< ::String > _g1 = ::Reflect_obj::fields(x);
-HXDLIN( 182)											while((_g < _g1->length)){
-HXLINE( 182)												::String field = _g1->__get(_g);
-HXDLIN( 182)												_g = (_g + 1);
-HXLINE( 183)												 ::Dynamic val = ::Reflect_obj::getProperty(x,field);
-HXLINE( 184)												obj->set(field,this->convertToMagLev(val));
+HXLINE( 176)									if (::Std_obj::isOfType(x,( ( ::Dynamic)(::hx::ClassOf< ::haxe::ds::StringMap >()) ))) {
+HXLINE( 177)										 ::haxe::ds::StringMap map = ( ( ::haxe::ds::StringMap)(x) );
+HXLINE( 178)										 ::maglev::MagLevObject obj = ::maglev::MagLevObject_obj::create();
+HXLINE( 179)										{
+HXLINE( 179)											 ::Dynamic key = map->keys();
+HXDLIN( 179)											while(( (bool)(key->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
+HXLINE( 179)												::String key1 = ( (::String)(key->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)()) );
+HXLINE( 180)												obj->set(key1,this->convertToMagLev(map->get(key1)));
             											}
             										}
-HXLINE( 186)										return obj;
+HXLINE( 182)										return obj;
             									}
             									else {
-HXLINE( 188)										if (::Reflect_obj::isFunction(x)) {
-HXLINE( 189)											 ::Dynamic f = x;
-HXLINE( 190)											return ::maglev::MagLevFunction_obj::fromFunction(f);
+HXLINE( 184)										if (::Reflect_obj::isObject(x)) {
+HXLINE( 185)											 ::maglev::MagLevObject obj = ::maglev::MagLevObject_obj::create();
+HXLINE( 186)											{
+HXLINE( 186)												int _g = 0;
+HXDLIN( 186)												::Array< ::String > _g1 = ::Reflect_obj::fields(x);
+HXDLIN( 186)												while((_g < _g1->length)){
+HXLINE( 186)													::String field = _g1->__get(_g);
+HXDLIN( 186)													_g = (_g + 1);
+HXLINE( 187)													 ::Dynamic val = ::Reflect_obj::getProperty(x,field);
+HXLINE( 188)													obj->set(field,this->convertToMagLev(val));
+            												}
+            											}
+HXLINE( 190)											return obj;
             										}
             										else {
 HXLINE( 193)											HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("convertToMagLev: unknown type",ae,84,a9,64)));
