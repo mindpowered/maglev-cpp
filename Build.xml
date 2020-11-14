@@ -102,6 +102,12 @@
    <depend name="include/maglev/MagLevResult.h" />
    <depend name="include/maglev/MagLevString.h" />
   </file>
+  <file name="src/maglev/CppResultCallbackPtr.cpp">
+   <depend name="include/Std.h" />
+   <depend name="include/cpp/Finalizable.h" />
+   <depend name="include/maglev/CppAny.h" />
+   <depend name="include/maglev/CppResultCallbackPtr.h" />
+  </file>
   <file name="src/maglev/CppCallbackPtr.cpp">
    <depend name="include/Std.h" />
    <depend name="include/cpp/Finalizable.h" />

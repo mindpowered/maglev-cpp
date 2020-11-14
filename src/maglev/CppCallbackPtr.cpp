@@ -22,16 +22,16 @@
 #include <maglev/CppCallbackPtr.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_13da0074370950dc_49_new,"maglev.CppCallbackPtr","new",0x2eaea39c,"maglev.CppCallbackPtr.new","maglev/CppCallback.hx",49,0x7d5fae5b)
-HX_LOCAL_STACK_FRAME(_hx_pos_13da0074370950dc_55_call,"maglev.CppCallbackPtr","call",0xa2d819e2,"maglev.CppCallbackPtr.call","maglev/CppCallback.hx",55,0x7d5fae5b)
-HX_LOCAL_STACK_FRAME(_hx_pos_13da0074370950dc_60_finalize,"maglev.CppCallbackPtr","finalize",0xcb2c38e2,"maglev.CppCallbackPtr.finalize","maglev/CppCallback.hx",60,0x7d5fae5b)
-HX_LOCAL_STACK_FRAME(_hx_pos_13da0074370950dc_63_toString,"maglev.CppCallbackPtr","toString",0x0e60c3f0,"maglev.CppCallbackPtr.toString","maglev/CppCallback.hx",63,0x7d5fae5b)
+HX_DEFINE_STACK_FRAME(_hx_pos_13da0074370950dc_48_new,"maglev.CppCallbackPtr","new",0x2eaea39c,"maglev.CppCallbackPtr.new","maglev/CppCallback.hx",48,0x7d5fae5b)
+HX_LOCAL_STACK_FRAME(_hx_pos_13da0074370950dc_54_call,"maglev.CppCallbackPtr","call",0xa2d819e2,"maglev.CppCallbackPtr.call","maglev/CppCallback.hx",54,0x7d5fae5b)
+HX_LOCAL_STACK_FRAME(_hx_pos_13da0074370950dc_59_finalize,"maglev.CppCallbackPtr","finalize",0xcb2c38e2,"maglev.CppCallbackPtr.finalize","maglev/CppCallback.hx",59,0x7d5fae5b)
+HX_LOCAL_STACK_FRAME(_hx_pos_13da0074370950dc_62_toString,"maglev.CppCallbackPtr","toString",0x0e60c3f0,"maglev.CppCallbackPtr.toString","maglev/CppCallback.hx",62,0x7d5fae5b)
 namespace maglev{
 
 void CppCallbackPtr_obj::__construct(::cpp::Function<  ::maglev::CppAny  ( std::vector<CppAny>) > inFunc){
-            	HX_STACKFRAME(&_hx_pos_13da0074370950dc_49_new)
-HXLINE(  50)		super::__construct(null());
-HXLINE(  51)		this->lambda = (new std::function<CppAny(std::vector<CppAny>)>(inFunc));
+            	HX_STACKFRAME(&_hx_pos_13da0074370950dc_48_new)
+HXLINE(  49)		super::__construct(null());
+HXLINE(  50)		this->lambda = (new std::function<CppAny(std::vector<CppAny>)>(inFunc));
             	}
 
 Dynamic CppCallbackPtr_obj::__CreateEmpty() { return new CppCallbackPtr_obj; }
@@ -54,20 +54,20 @@ bool CppCallbackPtr_obj::_hx_isInstanceOf(int inClassId) {
 }
 
  ::maglev::CppAny CppCallbackPtr_obj::call( std::vector<CppAny> args){
-            	HX_STACKFRAME(&_hx_pos_13da0074370950dc_55_call)
-HXDLIN(  55)		return this->lambda->get_ref().operator()(args);
+            	HX_STACKFRAME(&_hx_pos_13da0074370950dc_54_call)
+HXDLIN(  54)		return this->lambda->get_ref().operator()(args);
             	}
 
 
 void CppCallbackPtr_obj::finalize(){
-            	HX_STACKFRAME(&_hx_pos_13da0074370950dc_60_finalize)
-HXDLIN(  60)		this->lambda->destroy();
+            	HX_STACKFRAME(&_hx_pos_13da0074370950dc_59_finalize)
+HXDLIN(  59)		this->lambda->destroy();
             	}
 
 
 ::String CppCallbackPtr_obj::toString(){
-            	HX_STACKFRAME(&_hx_pos_13da0074370950dc_63_toString)
-HXDLIN(  63)		return ((HX_("functional(",c5,4c,91,02) + ::Std_obj::string(this->lambda)) + HX_(")",29,00,00,00));
+            	HX_STACKFRAME(&_hx_pos_13da0074370950dc_62_toString)
+HXDLIN(  62)		return ((HX_("functional(",c5,4c,91,02) + ::Std_obj::string(this->lambda)) + HX_(")",29,00,00,00));
             	}
 
 

@@ -73,6 +73,9 @@
 #ifndef INCLUDED_maglev_MagLevResult
 #include <maglev/MagLevResult.h>
 #endif
+#ifndef INCLUDED_maglev_CppResultCallbackPtr
+#include <maglev/CppResultCallbackPtr.h>
+#endif
 #ifndef INCLUDED_maglev_CppCallbackPtr
 #include <maglev/CppCallbackPtr.h>
 #endif
@@ -263,6 +266,7 @@ __files__boot();
 ::maglev::MagLevAny_obj::__register();
 ::maglev::MagLevError_obj::__register();
 ::maglev::MagLevResult_obj::__register();
+::maglev::CppResultCallbackPtr_obj::__register();
 ::maglev::CppCallbackPtr_obj::__register();
 ::maglev::CppAny_obj::__register();
 ::haxe::xml::Printer_obj::__register();
