@@ -17,22 +17,22 @@
 #include <maglev/MagLevString.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_7152bb62ae818fcd_248_new,"maglev.MagLevError","new",0x4295c6ec,"maglev.MagLevError.new","maglev/MagLev.hx",248,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_254_getCode,"maglev.MagLevError","getCode",0x39d58d6f,"maglev.MagLevError.getCode","maglev/MagLev.hx",254,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_257_getMessage,"maglev.MagLevError","getMessage",0xa291eec5,"maglev.MagLevError.getMessage","maglev/MagLev.hx",257,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_260_getData,"maglev.MagLevError","getData",0x3a74326c,"maglev.MagLevError.getData","maglev/MagLev.hx",260,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_263_getType,"maglev.MagLevError","getType",0x4519cefc,"maglev.MagLevError.getType","maglev/MagLev.hx",263,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_268_isEqual,"maglev.MagLevError","isEqual",0x34969ff6,"maglev.MagLevError.isEqual","maglev/MagLev.hx",268,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_277_toJson,"maglev.MagLevError","toJson",0x4f875637,"maglev.MagLevError.toJson","maglev/MagLev.hx",277,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_243_create,"maglev.MagLevError","create",0x4f750ff0,"maglev.MagLevError.create","maglev/MagLev.hx",243,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_266_getStaticType,"maglev.MagLevError","getStaticType",0x3d5b644a,"maglev.MagLevError.getStaticType","maglev/MagLev.hx",266,0x5b19476f)
+HX_DEFINE_STACK_FRAME(_hx_pos_7152bb62ae818fcd_271_new,"maglev.MagLevError","new",0x4295c6ec,"maglev.MagLevError.new","maglev/MagLev.hx",271,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_277_getCode,"maglev.MagLevError","getCode",0x39d58d6f,"maglev.MagLevError.getCode","maglev/MagLev.hx",277,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_280_getMessage,"maglev.MagLevError","getMessage",0xa291eec5,"maglev.MagLevError.getMessage","maglev/MagLev.hx",280,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_283_getData,"maglev.MagLevError","getData",0x3a74326c,"maglev.MagLevError.getData","maglev/MagLev.hx",283,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_286_getType,"maglev.MagLevError","getType",0x4519cefc,"maglev.MagLevError.getType","maglev/MagLev.hx",286,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_291_isEqual,"maglev.MagLevError","isEqual",0x34969ff6,"maglev.MagLevError.isEqual","maglev/MagLev.hx",291,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_300_toJson,"maglev.MagLevError","toJson",0x4f875637,"maglev.MagLevError.toJson","maglev/MagLev.hx",300,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_266_create,"maglev.MagLevError","create",0x4f750ff0,"maglev.MagLevError.create","maglev/MagLev.hx",266,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_7152bb62ae818fcd_289_getStaticType,"maglev.MagLevError","getStaticType",0x3d5b644a,"maglev.MagLevError.getStaticType","maglev/MagLev.hx",289,0x5b19476f)
 namespace maglev{
 
 void MagLevError_obj::__construct( ::maglev::MagLevNumber code, ::maglev::MagLevString message, ::maglev::MagLevAny data){
-            	HX_STACKFRAME(&_hx_pos_7152bb62ae818fcd_248_new)
-HXLINE( 249)		this->code = code;
-HXLINE( 250)		this->message = message;
-HXLINE( 251)		this->data = data;
+            	HX_STACKFRAME(&_hx_pos_7152bb62ae818fcd_271_new)
+HXLINE( 272)		this->code = code;
+HXLINE( 273)		this->message = message;
+HXLINE( 274)		this->data = data;
             	}
 
 Dynamic MagLevError_obj::__CreateEmpty() { return new MagLevError_obj; }
@@ -51,90 +51,90 @@ bool MagLevError_obj::_hx_isInstanceOf(int inClassId) {
 }
 
 int MagLevError_obj::getCode(){
-            	HX_STACKFRAME(&_hx_pos_7152bb62ae818fcd_254_getCode)
-HXDLIN( 254)		return this->code->getInt();
+            	HX_STACKFRAME(&_hx_pos_7152bb62ae818fcd_277_getCode)
+HXDLIN( 277)		return this->code->getInt();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(MagLevError_obj,getCode,return )
 
 ::String MagLevError_obj::getMessage(){
-            	HX_STACKFRAME(&_hx_pos_7152bb62ae818fcd_257_getMessage)
-HXDLIN( 257)		return this->message->getString();
+            	HX_STACKFRAME(&_hx_pos_7152bb62ae818fcd_280_getMessage)
+HXDLIN( 280)		return this->message->getString();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(MagLevError_obj,getMessage,return )
 
  ::maglev::MagLevAny MagLevError_obj::getData(){
-            	HX_STACKFRAME(&_hx_pos_7152bb62ae818fcd_260_getData)
-HXDLIN( 260)		return this->data;
+            	HX_STACKFRAME(&_hx_pos_7152bb62ae818fcd_283_getData)
+HXDLIN( 283)		return this->data;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(MagLevError_obj,getData,return )
 
 int MagLevError_obj::getType(){
-            	HX_STACKFRAME(&_hx_pos_7152bb62ae818fcd_263_getType)
-HXDLIN( 263)		return 100;
+            	HX_STACKFRAME(&_hx_pos_7152bb62ae818fcd_286_getType)
+HXDLIN( 286)		return 100;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(MagLevError_obj,getType,return )
 
 bool MagLevError_obj::isEqual( ::maglev::MagLevError other){
-            	HX_GC_STACKFRAME(&_hx_pos_7152bb62ae818fcd_268_isEqual)
-HXLINE( 270)		bool same = true;
-HXLINE( 271)		if (same) {
-HXLINE( 271)			 ::maglev::MagLevNumber same1 = this->code;
-HXDLIN( 271)			same = same1->isEqual( ::maglev::MagLevNumber_obj::__alloc( HX_CTX ,( (Float)(other->getCode()) )));
+            	HX_GC_STACKFRAME(&_hx_pos_7152bb62ae818fcd_291_isEqual)
+HXLINE( 293)		bool same = true;
+HXLINE( 294)		if (same) {
+HXLINE( 294)			 ::maglev::MagLevNumber same1 = this->code;
+HXDLIN( 294)			same = same1->isEqual( ::maglev::MagLevNumber_obj::__alloc( HX_CTX ,( (Float)(other->getCode()) )));
             		}
             		else {
-HXLINE( 271)			same = false;
+HXLINE( 294)			same = false;
             		}
-HXLINE( 272)		if (same) {
-HXLINE( 272)			 ::maglev::MagLevString same1 = this->message;
-HXDLIN( 272)			same = same1->isEqual( ::maglev::MagLevString_obj::__alloc( HX_CTX ,other->getMessage()));
-            		}
-            		else {
-HXLINE( 272)			same = false;
-            		}
-HXLINE( 273)		if (same) {
-HXLINE( 273)			 ::maglev::MagLevAny same1 = this->data;
-HXDLIN( 273)			same = same1->isEqual(other->getData());
+HXLINE( 295)		if (same) {
+HXLINE( 295)			 ::maglev::MagLevString same1 = this->message;
+HXDLIN( 295)			same = same1->isEqual( ::maglev::MagLevString_obj::__alloc( HX_CTX ,other->getMessage()));
             		}
             		else {
-HXLINE( 273)			same = false;
+HXLINE( 295)			same = false;
             		}
-HXLINE( 274)		return same;
+HXLINE( 296)		if (same) {
+HXLINE( 296)			 ::maglev::MagLevAny same1 = this->data;
+HXDLIN( 296)			same = same1->isEqual(other->getData());
+            		}
+            		else {
+HXLINE( 296)			same = false;
+            		}
+HXLINE( 297)		return same;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(MagLevError_obj,isEqual,return )
 
  ::maglev::MagLevString MagLevError_obj::toJson(){
-            	HX_GC_STACKFRAME(&_hx_pos_7152bb62ae818fcd_277_toJson)
-HXDLIN( 277)		::String _hx_tmp = ((HX_("{\"code\": ",d4,23,09,40) + ::Std_obj::string(this->code->toJson())) + HX_(", \"message\": ",8f,e4,0e,25));
-HXDLIN( 277)		::String _hx_tmp1 = ((_hx_tmp + ::Std_obj::string(this->message->toJson())) + HX_(", \"data\": ",f0,41,60,15));
-HXDLIN( 277)		return  ::maglev::MagLevString_obj::__alloc( HX_CTX ,((_hx_tmp1 + ::Std_obj::string(this->data->toJson())) + HX_("}",7d,00,00,00)));
+            	HX_GC_STACKFRAME(&_hx_pos_7152bb62ae818fcd_300_toJson)
+HXDLIN( 300)		::String _hx_tmp = ((HX_("{\"code\": ",d4,23,09,40) + ::Std_obj::string(this->code->toJson())) + HX_(", \"message\": ",8f,e4,0e,25));
+HXDLIN( 300)		::String _hx_tmp1 = ((_hx_tmp + ::Std_obj::string(this->message->toJson())) + HX_(", \"data\": ",f0,41,60,15));
+HXDLIN( 300)		return  ::maglev::MagLevString_obj::__alloc( HX_CTX ,((_hx_tmp1 + ::Std_obj::string(this->data->toJson())) + HX_("}",7d,00,00,00)));
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(MagLevError_obj,toJson,return )
 
  ::maglev::MagLevError MagLevError_obj::create(int code,::String message, ::maglev::MagLevAny data){
-            	HX_GC_STACKFRAME(&_hx_pos_7152bb62ae818fcd_243_create)
-HXLINE( 244)		 ::maglev::MagLevNumber code2 =  ::maglev::MagLevNumber_obj::__alloc( HX_CTX ,( (Float)(code) ));
-HXLINE( 245)		 ::maglev::MagLevString message2 =  ::maglev::MagLevString_obj::__alloc( HX_CTX ,message);
-HXLINE( 246)		return  ::maglev::MagLevError_obj::__alloc( HX_CTX ,code2,message2,data);
+            	HX_GC_STACKFRAME(&_hx_pos_7152bb62ae818fcd_266_create)
+HXLINE( 267)		 ::maglev::MagLevNumber code2 =  ::maglev::MagLevNumber_obj::__alloc( HX_CTX ,( (Float)(code) ));
+HXLINE( 268)		 ::maglev::MagLevString message2 =  ::maglev::MagLevString_obj::__alloc( HX_CTX ,message);
+HXLINE( 269)		return  ::maglev::MagLevError_obj::__alloc( HX_CTX ,code2,message2,data);
             	}
 
 
 STATIC_HX_DEFINE_DYNAMIC_FUNC3(MagLevError_obj,create,return )
 
 int MagLevError_obj::getStaticType(){
-            	HX_STACKFRAME(&_hx_pos_7152bb62ae818fcd_266_getStaticType)
-HXDLIN( 266)		return 100;
+            	HX_STACKFRAME(&_hx_pos_7152bb62ae818fcd_289_getStaticType)
+HXDLIN( 289)		return 100;
             	}
 
 

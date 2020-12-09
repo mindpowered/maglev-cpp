@@ -11,14 +11,14 @@
 #include <maglev/MagLevString.h>
 #endif
 
-HX_DEFINE_STACK_FRAME(_hx_pos_02f376b4f7968b18_287_new,"maglev.MagLevAny","new",0x23f40790,"maglev.MagLevAny.new","maglev/MagLev.hx",287,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_02f376b4f7968b18_289_toJson,"maglev.MagLevAny","toJson",0xd6f81413,"maglev.MagLevAny.toJson","maglev/MagLev.hx",289,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_02f376b4f7968b18_292_getType,"maglev.MagLevAny","getType",0x404f31a0,"maglev.MagLevAny.getType","maglev/MagLev.hx",292,0x5b19476f)
-HX_LOCAL_STACK_FRAME(_hx_pos_02f376b4f7968b18_295_isEqual,"maglev.MagLevAny","isEqual",0x2fcc029a,"maglev.MagLevAny.isEqual","maglev/MagLev.hx",295,0x5b19476f)
+HX_DEFINE_STACK_FRAME(_hx_pos_02f376b4f7968b18_310_new,"maglev.MagLevAny","new",0x23f40790,"maglev.MagLevAny.new","maglev/MagLev.hx",310,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_02f376b4f7968b18_312_toJson,"maglev.MagLevAny","toJson",0xd6f81413,"maglev.MagLevAny.toJson","maglev/MagLev.hx",312,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_02f376b4f7968b18_315_getType,"maglev.MagLevAny","getType",0x404f31a0,"maglev.MagLevAny.getType","maglev/MagLev.hx",315,0x5b19476f)
+HX_LOCAL_STACK_FRAME(_hx_pos_02f376b4f7968b18_318_isEqual,"maglev.MagLevAny","isEqual",0x2fcc029a,"maglev.MagLevAny.isEqual","maglev/MagLev.hx",318,0x5b19476f)
 namespace maglev{
 
 void MagLevAny_obj::__construct(){
-            	HX_STACKFRAME(&_hx_pos_02f376b4f7968b18_287_new)
+            	HX_STACKFRAME(&_hx_pos_02f376b4f7968b18_310_new)
             	}
 
 Dynamic MagLevAny_obj::__CreateEmpty() { return new MagLevAny_obj; }
@@ -37,27 +37,27 @@ bool MagLevAny_obj::_hx_isInstanceOf(int inClassId) {
 }
 
  ::maglev::MagLevString MagLevAny_obj::toJson(){
-            	HX_STACKFRAME(&_hx_pos_02f376b4f7968b18_289_toJson)
-HXDLIN( 289)		HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("toJson does not exist for MagLevAny",eb,7d,66,1e)));
-HXDLIN( 289)		return null();
+            	HX_STACKFRAME(&_hx_pos_02f376b4f7968b18_312_toJson)
+HXDLIN( 312)		HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("toJson does not exist for MagLevAny",eb,7d,66,1e)));
+HXDLIN( 312)		return null();
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(MagLevAny_obj,toJson,return )
 
 int MagLevAny_obj::getType(){
-            	HX_STACKFRAME(&_hx_pos_02f376b4f7968b18_292_getType)
-HXDLIN( 292)		HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("getType does not exist for MagLevAny",9e,e6,de,74)));
-HXDLIN( 292)		return 0;
+            	HX_STACKFRAME(&_hx_pos_02f376b4f7968b18_315_getType)
+HXDLIN( 315)		HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("getType does not exist for MagLevAny",9e,e6,de,74)));
+HXDLIN( 315)		return 0;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(MagLevAny_obj,getType,return )
 
 bool MagLevAny_obj::isEqual( ::maglev::MagLevAny o){
-            	HX_STACKFRAME(&_hx_pos_02f376b4f7968b18_295_isEqual)
-HXDLIN( 295)		HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("isEqual does not exist for MagLevAny",64,ed,cb,b5)));
-HXDLIN( 295)		return false;
+            	HX_STACKFRAME(&_hx_pos_02f376b4f7968b18_318_isEqual)
+HXDLIN( 318)		HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(HX_("isEqual does not exist for MagLevAny",64,ed,cb,b5)));
+HXDLIN( 318)		return false;
             	}
 
 
