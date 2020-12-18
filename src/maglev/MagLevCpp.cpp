@@ -254,7 +254,8 @@ void MagLevCpp_obj::old_call(::String method,::cpp::VirtualArray args, ::Dynamic
             		HX_BEGIN_LOCAL_FUNC_S0(::hx::LocalFunc,_hx_Closure_0) HXARGC(1)
             		 ::maglev::MagLevResult _hx_run( ::maglev::MagLevError error){
             			HX_GC_STACKFRAME(&_hx_pos_463dba869de52960_141_old_call)
-HXLINE( 141)			HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(( ( ::Dynamic)(( (cpp::Struct<  hx::StdString >)(::hx::StdString(error->getMessage())) )) )));
+HXLINE( 141)			::String _hx_tmp = error->getMessage();
+HXDLIN( 141)			HX_STACK_DO_THROW( ::haxe::Exception_obj::__alloc( HX_CTX ,_hx_tmp,null(),( ( ::Dynamic)(( (cpp::Struct<  hx::StdString >)(::hx::StdString(error->getMessage())) )) )));
 HXDLIN( 141)			return null();
             		}
             		HX_END_LOCAL_FUNC1(return)
@@ -381,7 +382,7 @@ HXLINE( 207)									i = (i + 1);
 HXLINE( 209)								return map;
             							}
             							else {
-HXLINE( 212)								HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(( ( ::Dynamic)(( (cpp::Struct<  hx::StdString >)(::hx::StdString(HX_("convertToHaxe: unknown type",4a,83,07,f2))) )) )));
+HXLINE( 212)								HX_STACK_DO_THROW( ::haxe::Exception_obj::__alloc( HX_CTX ,HX_("convertToHaxe: unknown type",4a,83,07,f2),null(),null()));
             							}
             						}
             					}
@@ -395,7 +396,7 @@ HXLINE( 174)		return null();
 HX_DEFINE_DYNAMIC_FUNC1(MagLevCpp_obj,old_convertToHaxe,return )
 
  ::maglev::MagLevAny MagLevCpp_obj::old_convertToMagLev( ::Dynamic x){
-            	HX_STACKFRAME(&_hx_pos_463dba869de52960_216_old_convertToMagLev)
+            	HX_GC_STACKFRAME(&_hx_pos_463dba869de52960_216_old_convertToMagLev)
 HXDLIN( 216)		 ::maglev::MagLevCpp _gthis = ::hx::ObjectPtr<OBJ_>(this);
 HXLINE( 217)		if (::hx::IsNull( x )) {
 HXLINE( 218)			return ::maglev::MagLevNull_obj::create();
@@ -474,7 +475,7 @@ HXLINE( 261)													obj->set(field,this->old_convertToMagLev(val));
 HXLINE( 263)											return obj;
             										}
             										else {
-HXLINE( 266)											HX_STACK_DO_THROW(::haxe::Exception_obj::thrown(( ( ::Dynamic)(( (cpp::Struct<  hx::StdString >)(::hx::StdString(HX_("convertToMagLev: unknown type",ae,84,a9,64))) )) )));
+HXLINE( 266)											HX_STACK_DO_THROW( ::haxe::Exception_obj::__alloc( HX_CTX ,HX_("convertToMagLev: unknown type",ae,84,a9,64),null(),null()));
             										}
             									}
             								}
