@@ -80,7 +80,6 @@ const char *__hxcpp_all_files[] = {
 "maglev/CppResultCallback.hx",
 "maglev/MagLev.hx",
 "maglev/MagLevCpp.hx",
-"maglev/MagLevOld.hx",
 "maglev/Telemetry.hx",
 #endif
  0 };
@@ -163,7 +162,6 @@ const char *__hxcpp_all_files_fullpath[] = {
 "/my-component/src/maglev/CppResultCallback.hx",
 "/my-component/src/maglev/MagLev.hx",
 "/my-component/src/maglev/MagLevCpp.hx",
-"/my-component/src/maglev/MagLevOld.hx",
 "/my-component/src/maglev/Telemetry.hx",
 #endif
  0 };
@@ -255,7 +253,6 @@ const char *__hxcpp_all_classes[] = {
 "maglev.MagLevBoolean",
 "maglev.MagLevNull",
 "maglev.MagLevCpp",
-"maglev.MagLevOld",
 "maglev.Telemetry",
 "sys.FileSystem",
 "sys.Http",

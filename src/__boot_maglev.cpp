@@ -94,9 +94,6 @@
 #ifndef INCLUDED_maglev_Telemetry
 #include <maglev/Telemetry.h>
 #endif
-#ifndef INCLUDED_maglev_MagLevOld
-#include <maglev/MagLevOld.h>
-#endif
 #ifndef INCLUDED_maglev_MagLevCpp
 #include <maglev/MagLevCpp.h>
 #endif
@@ -363,7 +360,6 @@ void __boot_maglev()
 ::sys::io::File_obj::__register();
 ::sys::FileSystem_obj::__register();
 ::maglev::Telemetry_obj::__register();
-::maglev::MagLevOld_obj::__register();
 ::maglev::MagLevCpp_obj::__register();
 ::maglev::MagLevNull_obj::__register();
 ::maglev::MagLevBoolean_obj::__register();

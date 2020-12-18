@@ -152,29 +152,25 @@
    <depend name="include/maglev/Telemetry.h" />
    <depend name="include/sys/Http.h" />
   </file>
-  <file name="src/maglev/MagLevOld.cpp">
+  <file name="src/maglev/MagLevCpp.cpp">
    <depend name="include/Reflect.h" />
    <depend name="include/Std.h" />
    <depend name="include/haxe/Exception.h" />
    <depend name="include/haxe/IMap.h" />
    <depend name="include/haxe/ds/StringMap.h" />
+   <depend name="include/maglev/CppAny.h" />
    <depend name="include/maglev/MagLev.h" />
    <depend name="include/maglev/MagLevAny.h" />
    <depend name="include/maglev/MagLevArray.h" />
    <depend name="include/maglev/MagLevBoolean.h" />
+   <depend name="include/maglev/MagLevCpp.h" />
    <depend name="include/maglev/MagLevError.h" />
    <depend name="include/maglev/MagLevFunction.h" />
    <depend name="include/maglev/MagLevNull.h" />
    <depend name="include/maglev/MagLevNumber.h" />
    <depend name="include/maglev/MagLevObject.h" />
-   <depend name="include/maglev/MagLevOld.h" />
    <depend name="include/maglev/MagLevResult.h" />
    <depend name="include/maglev/MagLevString.h" />
-  </file>
-  <file name="src/maglev/MagLevCpp.cpp">
-   <depend name="include/maglev/CppAny.h" />
-   <depend name="include/maglev/MagLevCpp.h" />
-   <depend name="include/maglev/MagLevOld.h" />
   </file>
   <file name="src/maglev/MagLevNull.cpp">
    <depend name="include/maglev/MagLevAny.h" />
