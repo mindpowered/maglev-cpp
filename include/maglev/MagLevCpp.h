@@ -60,6 +60,8 @@ class HXCPP_CLASS_ATTRIBUTES MagLevCpp_obj : public ::hx::Object
 
 		static  ::maglev::MagLevCpp getInstance( hx::StdString cppKey);
 
+		static void throwString( hx::StdString message);
+
 		 ::maglev::MagLev maglev;
 		void _hx_register( hx::StdString cppMethod, std::function<CppAny(std::vector<CppAny>)> cppCallback);
 
