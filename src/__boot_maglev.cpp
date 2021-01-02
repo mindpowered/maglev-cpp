@@ -329,6 +329,11 @@
 
 void __boot_maglev()
 {
+//only boot once
+static bool already_called = false;
+if (already_called) return;
+already_called = true;
+
 ::sys::io::FileSeek_obj::__register();
 ::haxe::io::Error_obj::__register();
 ::haxe::io::Encoding_obj::__register();
