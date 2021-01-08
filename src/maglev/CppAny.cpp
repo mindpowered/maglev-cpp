@@ -48,10 +48,13 @@ HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_199_pushArray,"maglev.CppAny","pus
 HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_205_getArray,"maglev.CppAny","getArray",0xb2ced744,"maglev.CppAny.getArray","maglev/CppAny.hx",205,0xb88aee50)
 HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_214_getCppAnyVector,"maglev.CppAny","getCppAnyVector",0x939cace1,"maglev.CppAny.getCppAnyVector","maglev/CppAny.hx",214,0xb88aee50)
 HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_225_isArray,"maglev.CppAny","isArray",0x4d31164e,"maglev.CppAny.isArray","maglev/CppAny.hx",225,0xb88aee50)
-HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_237_setMap,"maglev.CppAny","setMap",0x333277fb,"maglev.CppAny.setMap","maglev/CppAny.hx",237,0xb88aee50)
-HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_241_getMap,"maglev.CppAny","getMap",0x66ea2387,"maglev.CppAny.getMap","maglev/CppAny.hx",241,0xb88aee50)
-HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_250_getMapValue,"maglev.CppAny","getMapValue",0x858aa26a,"maglev.CppAny.getMapValue","maglev/CppAny.hx",250,0xb88aee50)
-HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_260_getMapKeys,"maglev.CppAny","getMapKeys",0x1730011b,"maglev.CppAny.getMapKeys","maglev/CppAny.hx",260,0xb88aee50)
+HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_236_makeMap,"maglev.CppAny","makeMap",0xe73af64d,"maglev.CppAny.makeMap","maglev/CppAny.hx",236,0xb88aee50)
+HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_243_setMap,"maglev.CppAny","setMap",0x333277fb,"maglev.CppAny.setMap","maglev/CppAny.hx",243,0xb88aee50)
+HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_247_getMap,"maglev.CppAny","getMap",0x66ea2387,"maglev.CppAny.getMap","maglev/CppAny.hx",247,0xb88aee50)
+HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_254_isMap,"maglev.CppAny","isMap",0x89f1ac11,"maglev.CppAny.isMap","maglev/CppAny.hx",254,0xb88aee50)
+HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_263_setMapValue,"maglev.CppAny","setMapValue",0x8ff7a976,"maglev.CppAny.setMapValue","maglev/CppAny.hx",263,0xb88aee50)
+HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_273_getMapValue,"maglev.CppAny","getMapValue",0x858aa26a,"maglev.CppAny.getMapValue","maglev/CppAny.hx",273,0xb88aee50)
+HX_LOCAL_STACK_FRAME(_hx_pos_dad498497c3f302d_283_getMapKeys,"maglev.CppAny","getMapKeys",0x1730011b,"maglev.CppAny.getMapKeys","maglev/CppAny.hx",283,0xb88aee50)
 namespace maglev{
 
 void CppAny_obj::__construct(){
@@ -350,45 +353,92 @@ HXDLIN( 225)		return false;
 
 HX_DEFINE_DYNAMIC_FUNC0(CppAny_obj,isArray,return )
 
+void CppAny_obj::makeMap(){
+            	HX_GC_STACKFRAME(&_hx_pos_dad498497c3f302d_236_makeMap)
+HXLINE( 237)		 ::haxe::ds::StringMap newMap =  ::haxe::ds::StringMap_obj::__alloc( HX_CTX );
+HXLINE( 238)		this->data = newMap;
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC0(CppAny_obj,makeMap,(void))
+
 void CppAny_obj::setMap( ::haxe::ds::StringMap data){
-            	HX_STACKFRAME(&_hx_pos_dad498497c3f302d_237_setMap)
-HXDLIN( 237)		this->data = data;
+            	HX_STACKFRAME(&_hx_pos_dad498497c3f302d_243_setMap)
+HXDLIN( 243)		this->data = data;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC1(CppAny_obj,setMap,(void))
 
  ::haxe::ds::StringMap CppAny_obj::getMap(){
-            	HX_STACKFRAME(&_hx_pos_dad498497c3f302d_241_getMap)
-HXLINE( 242)		 ::haxe::ds::StringMap data = ( ( ::haxe::ds::StringMap)(this->data) );
-HXLINE( 243)		return data;
+            	HX_STACKFRAME(&_hx_pos_dad498497c3f302d_247_getMap)
+HXLINE( 248)		 ::haxe::ds::StringMap data = ( ( ::haxe::ds::StringMap)(this->data) );
+HXLINE( 249)		return data;
             	}
 
 
 HX_DEFINE_DYNAMIC_FUNC0(CppAny_obj,getMap,return )
 
+bool CppAny_obj::isMap(){
+            	HX_STACKFRAME(&_hx_pos_dad498497c3f302d_254_isMap)
+HXDLIN( 254)		try {
+            			HX_STACK_CATCHABLE( ::Dynamic, 0);
+HXLINE( 255)			this->getMap();
+HXLINE( 256)			return true;
+            		} catch( ::Dynamic _hx_e) {
+            			if (_hx_e.IsClass<  ::Dynamic >() ){
+            				HX_STACK_BEGIN_CATCH
+            				 ::Dynamic _g = _hx_e;
+HXLINE(   1)				{
+HXLINE(   1)					null();
+            				}
+HXLINE( 254)				if (::Std_obj::isOfType(::haxe::Exception_obj::caught(_g)->unwrap(),::hx::ClassOf< ::String >())) {
+HXLINE( 258)					return false;
+            				}
+            				else {
+HXDLIN( 254)					HX_STACK_DO_THROW(_g);
+            				}
+            			}
+            			else {
+            				HX_STACK_DO_THROW(_hx_e);
+            			}
+            		}
+HXDLIN( 254)		return false;
+            	}
+
+
+HX_DEFINE_DYNAMIC_FUNC0(CppAny_obj,isMap,return )
+
+void CppAny_obj::setMapValue( hx::StdString key, ::maglev::CppAny value){
+            	HX_STACKFRAME(&_hx_pos_dad498497c3f302d_263_setMapValue)
+HXLINE( 264)		 ::haxe::ds::StringMap map = this->getMap();
+HXLINE( 265)		::String strKey = ::hx::TCast< ::String >::cast(key);
+HXLINE( 266)		map->set(strKey,value);
+            	}
+
+
  ::maglev::CppAny CppAny_obj::getMapValue( hx::StdString key){
-            	HX_STACKFRAME(&_hx_pos_dad498497c3f302d_250_getMapValue)
-HXLINE( 251)		 ::haxe::ds::StringMap map = this->getMap();
-HXLINE( 252)		::String strKey = ::hx::TCast< ::String >::cast(key);
-HXLINE( 253)		return ( ( ::maglev::CppAny)(map->get(strKey)) );
+            	HX_STACKFRAME(&_hx_pos_dad498497c3f302d_273_getMapValue)
+HXLINE( 274)		 ::haxe::ds::StringMap map = this->getMap();
+HXLINE( 275)		::String strKey = ::hx::TCast< ::String >::cast(key);
+HXLINE( 276)		return ( ( ::maglev::CppAny)(map->get(strKey)) );
             	}
 
 
  std::vector<CppAny> CppAny_obj::getMapKeys(){
-            	HX_GC_STACKFRAME(&_hx_pos_dad498497c3f302d_260_getMapKeys)
-HXLINE( 261)		 std::vector<CppAny> arr = std::vector<CppAny>();
-HXLINE( 262)		 ::haxe::ds::StringMap map = this->getMap();
-HXLINE( 263)		{
-HXLINE( 263)			 ::Dynamic key = map->keys();
-HXDLIN( 263)			while(( (bool)(key->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
-HXLINE( 263)				::String key1 = ( (::String)(key->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)()) );
-HXLINE( 264)				 ::maglev::CppAny a =  ::maglev::CppAny_obj::__alloc( HX_CTX );
-HXLINE( 265)				a->setString(key1);
-HXLINE( 266)				arr.push_back(a);
+            	HX_GC_STACKFRAME(&_hx_pos_dad498497c3f302d_283_getMapKeys)
+HXLINE( 284)		 std::vector<CppAny> arr = std::vector<CppAny>();
+HXLINE( 285)		 ::haxe::ds::StringMap map = this->getMap();
+HXLINE( 286)		{
+HXLINE( 286)			 ::Dynamic key = map->keys();
+HXDLIN( 286)			while(( (bool)(key->__Field(HX_("hasNext",6d,a5,46,18),::hx::paccDynamic)()) )){
+HXLINE( 286)				::String key1 = ( (::String)(key->__Field(HX_("next",f3,84,02,49),::hx::paccDynamic)()) );
+HXLINE( 287)				 ::maglev::CppAny a =  ::maglev::CppAny_obj::__alloc( HX_CTX );
+HXLINE( 288)				a->setString(key1);
+HXLINE( 289)				arr.push_back(a);
             			}
             		}
-HXLINE( 268)		return arr;
+HXLINE( 291)		return arr;
             	}
 
 
@@ -428,6 +478,9 @@ void CppAny_obj::__Visit(HX_VISIT_PARAMS)
 	case 4:
 		if (HX_FIELD_EQ(inName,"data") ) { return ::hx::Val( data ); }
 		break;
+	case 5:
+		if (HX_FIELD_EQ(inName,"isMap") ) { return ::hx::Val( isMap_dyn() ); }
+		break;
 	case 6:
 		if (HX_FIELD_EQ(inName,"isNull") ) { return ::hx::Val( isNull_dyn() ); }
 		if (HX_FIELD_EQ(inName,"isBool") ) { return ::hx::Val( isBool_dyn() ); }
@@ -441,6 +494,7 @@ void CppAny_obj::__Visit(HX_VISIT_PARAMS)
 		if (HX_FIELD_EQ(inName,"setBool") ) { return ::hx::Val( setBool_dyn() ); }
 		if (HX_FIELD_EQ(inName,"getBool") ) { return ::hx::Val( getBool_dyn() ); }
 		if (HX_FIELD_EQ(inName,"isArray") ) { return ::hx::Val( isArray_dyn() ); }
+		if (HX_FIELD_EQ(inName,"makeMap") ) { return ::hx::Val( makeMap_dyn() ); }
 		break;
 	case 8:
 		if (HX_FIELD_EQ(inName,"setFloat") ) { return ::hx::Val( setFloat_dyn() ); }
@@ -504,8 +558,10 @@ static ::String CppAny_obj_sMemberFields[] = {
 	HX_("pushArray",5f,d5,aa,69),
 	HX_("getArray",23,7d,66,85),
 	HX_("isArray",4f,11,15,c2),
+	HX_("makeMap",4e,f1,1e,5c),
 	HX_("setMap",1a,98,6a,6f),
 	HX_("getMap",a6,43,22,a3),
+	HX_("isMap",d2,34,51,c1),
 	::String(null()) };
 
 ::hx::Class CppAny_obj::__mClass;
