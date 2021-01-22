@@ -54,7 +54,7 @@ HX_DEFINE_DYNAMIC_FUNC1(Telemetry_obj,addInfo,(void))
 
 void Telemetry_obj::send(::Array< ::String > args){
             	HX_STACKFRAME(&_hx_pos_3a77c34645d29f08_25_send)
-HXLINE(  26)		::String url = HX_("https://telemetry.mindpowered.dev/send?",3d,7f,01,b7);
+HXLINE(  26)		::String url = HX_("http://telemetry.mindpowered.link/send?",25,8b,bb,c6);
 HXLINE(  27)		{
 HXLINE(  27)			int _g = 0;
 HXDLIN(  27)			::Array< ::String > _g1 = this->info;
