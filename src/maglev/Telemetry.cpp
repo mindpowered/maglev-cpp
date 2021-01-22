@@ -72,18 +72,7 @@ HXDLIN(  30)				_g2 = (_g2 + 1);
 HXLINE(  31)				url = (url + (::StringTools_obj::urlEncode(item) + HX_("&",26,00,00,00)));
             			}
             		}
-HXLINE(  33)		try {
-            			HX_STACK_CATCHABLE( ::Dynamic, 0);
-HXLINE(  34)			::sys::Http_obj::requestUrl(url);
-            		} catch( ::Dynamic _hx_e) {
-            			if (_hx_e.IsClass<  ::Dynamic >() ){
-            				HX_STACK_BEGIN_CATCH
-            				 ::Dynamic _g = _hx_e;
-            			}
-            			else {
-            				HX_STACK_DO_THROW(_hx_e);
-            			}
-            		}
+HXLINE(  34)		::sys::Http_obj::requestUrl(url);
             	}
 
 
